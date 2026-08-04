@@ -378,6 +378,98 @@ h2{
 }
 .voices .disclaimer{font-size:12px;color:var(--mist);text-align:center;margin-top:22px;}
 
+/* ======== シラソーマ カードレイアウト ======== */
+.method-cards{
+  display:grid;grid-template-columns:1fr 40px 1fr;gap:0;
+  align-items:center;margin-top:52px;
+}
+.method-card{
+  padding:36px 32px;text-align:center;
+}
+.method-card-bad{
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.1);
+}
+.method-card-good{
+  background:rgba(200,146,74,.12);
+  border:1px solid rgba(200,146,74,.3);
+}
+.method-card-label{
+  font-size:11px;letter-spacing:.36em;color:rgba(254,252,248,.4);
+  margin-bottom:20px;font-weight:500;
+}
+.method-card-good .method-card-label{color:rgba(200,146,74,.7);}
+.method-anim-wrap{margin:0 auto 20px;}
+.method-card-desc{
+  font-size:13.5px;color:rgba(254,252,248,.65);line-height:1.9;
+}
+.method-card-desc strong{color:rgba(254,252,248,.9);}
+.method-card-good .method-card-desc strong{color:var(--sun);}
+.method-card-arrow{
+  text-align:center;font-size:22px;color:rgba(200,146,74,.5);
+}
+.method-effects{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
+  margin-top:48px;background:rgba(200,146,74,.2);
+  border:1px solid rgba(200,146,74,.2);
+}
+.method-effect{
+  background:rgba(255,255,255,.04);padding:32px 28px;text-align:center;
+}
+.method-effect-icon{font-size:26px;display:block;margin-bottom:12px;}
+.method-effect-title{
+  font-family:'Shippori Mincho',serif;font-size:16px;
+  color:var(--base);letter-spacing:.08em;margin-bottom:8px;
+}
+.method-effect-sub{font-size:13px;color:rgba(254,252,248,.5);line-height:1.85;}
+
+/* ======== コスパ数字 極大化 ======== */
+.costs-num{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(96px,18vw,160px);font-weight:400;
+  color:var(--sun);line-height:.9;
+  letter-spacing:-.04em;display:inline-block;
+}
+.costs-unit{
+  font-family:'Shippori Mincho',serif;
+  font-size:clamp(28px,4vw,42px);color:rgba(254,252,248,.7);
+  vertical-align:bottom;margin-left:8px;padding-bottom:18px;display:inline-block;
+}
+.costs-unit small{font-size:60%;color:rgba(254,252,248,.45);}
+
+/* ======== トライアル グリッド ======== */
+.trial-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:0;
+  margin:0 auto;max-width:1000px;
+  background:var(--white);border:1px solid var(--sand-deep);
+}
+.trial-img-col{position:relative;}
+.trial-img-caption{
+  position:absolute;bottom:0;left:0;right:0;
+  background:rgba(40,36,32,.6);backdrop-filter:blur(4px);
+  padding:14px 20px;color:var(--base);font-size:13.5px;
+  font-family:'Shippori Mincho',serif;letter-spacing:.08em;
+}
+.trial-img-caption span{font-size:11.5px;color:rgba(254,252,248,.6);font-family:'Noto Sans JP',sans-serif;}
+.trial-text-col{padding:0;}
+.trial-text-col .trial-box{
+  border:none;padding:40px 36px;height:100%;
+  display:flex;flex-direction:column;justify-content:center;
+}
+
+/* ======== 購入 グリッド ======== */
+.order-with-img{
+  display:grid;grid-template-columns:1fr 1fr;gap:0;
+  max-width:900px;margin:16px auto 0;
+}
+.order-img-col{display:flex;flex-direction:column;gap:0;}
+.order-card-col{display:flex;align-items:center;}
+.order-card-col .order-card{
+  border-left:none;height:100%;
+  display:flex;flex-direction:column;justify-content:center;
+  padding:40px 36px;width:100%;
+}
+
 /* ======== 数字バー（リピート率） ======== */
 .trust-pills{
   display:flex;justify-content:center;gap:0;margin-top:52px;
@@ -608,6 +700,15 @@ footer a{color:rgba(254,252,248,.4);text-decoration:none;}
   .trust-pill{border-left:none;border-top:1px solid var(--sand-deep);}
   .trust-pill:first-child{border-top:none;}
   .hero{min-height:88vh;}
+  .method-cards{grid-template-columns:1fr;gap:1px;}
+  .method-card-arrow{transform:rotate(90deg);padding:10px 0;}
+  .method-effects{grid-template-columns:1fr;}
+  .trial-grid{grid-template-columns:1fr;}
+  .trial-img-col img{height:260px;}
+  .order-with-img{grid-template-columns:1fr;}
+  .order-img-col{flex-direction:row;}
+  .order-img-col img{height:180px;flex:1;}
+  .order-card-col .order-card{border-left:1px solid var(--sand-deep);border-top:none;}
   .hero-photo{width:100%;}
   .hero-fog{
     background:linear-gradient(180deg,
@@ -712,89 +813,125 @@ footer a{color:rgba(254,252,248,.4);text-decoration:none;}
   <div class="inner reveal">
     <p class="eyebrow">THE TECHNOLOGY</p>
     <h2>「SPFが高い＝乾く」は、<br>もう古い話です。</h2>
-    <p class="lead">一般的な日焼け止めは、紫外線カット成分が直接肌に触れます。だから乾く。崩れる。シラソーマ製法は、その問題を根本から解決します。</p>
+    <p class="lead">一般的な日焼け止めは、紫外線カット成分が直接肌に触れます。だから乾く。崩れる。シラソーマ製法は、その問題を製法から解決しました。</p>
 
-    <!-- SVGアニメーション図解 -->
-    <div class="capsule-demo">
-      <svg viewBox="0 0 720 260" xmlns="http://www.w3.org/2000/svg" style="max-width:720px;width:100%;display:block;margin:0 auto;">
-        <!-- 左パネル：通常UV -->
-        <rect x="0" y="0" width="320" height="260" fill="rgba(255,255,255,0.05)" rx="2"/>
-        <text x="160" y="30" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="11" fill="rgba(254,252,248,0.4)" letter-spacing="4">CONVENTIONAL UV</text>
-        <!-- 肌の層 -->
-        <rect x="20" y="200" width="280" height="40" fill="rgba(200,146,74,0.2)" rx="2"/>
-        <text x="160" y="225" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="11" fill="rgba(200,146,74,0.7)">肌</text>
-        <!-- UV粒子が直接当たる -->
-        <circle class="uv-bad-1" cx="80" cy="160" r="10" fill="rgba(255,120,80,0.85)">
-          <animate attributeName="cy" values="60;170;170" dur="2.2s" repeatCount="indefinite" begin="0s"/>
-          <animate attributeName="opacity" values="1;1;0" dur="2.2s" repeatCount="indefinite" begin="0s"/>
-        </circle>
-        <circle cx="140" cy="160" r="10" fill="rgba(255,120,80,0.85)">
-          <animate attributeName="cy" values="60;170;170" dur="2.2s" repeatCount="indefinite" begin="0.3s"/>
-          <animate attributeName="opacity" values="1;1;0" dur="2.2s" repeatCount="indefinite" begin="0.3s"/>
-        </circle>
-        <circle cx="200" cy="160" r="10" fill="rgba(255,120,80,0.85)">
-          <animate attributeName="cy" values="60;170;170" dur="2.2s" repeatCount="indefinite" begin="0.6s"/>
-          <animate attributeName="opacity" values="1;1;0" dur="2.2s" repeatCount="indefinite" begin="0.6s"/>
-        </circle>
-        <circle cx="260" cy="160" r="10" fill="rgba(255,120,80,0.85)">
-          <animate attributeName="cy" values="60;170;170" dur="2.2s" repeatCount="indefinite" begin="0.9s"/>
-          <animate attributeName="opacity" values="1;1;0" dur="2.2s" repeatCount="indefinite" begin="0.9s"/>
-        </circle>
-        <!-- 太陽光線 -->
-        <text x="160" y="58" text-anchor="middle" font-size="20" fill="rgba(255,200,80,0.6)">☀</text>
-        <text x="160" y="240" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="11" fill="rgba(255,120,80,0.7)">UV成分が直接肌へ</text>
+    <!-- シラソーマ2カラム説明 -->
+    <div class="method-cards">
+      <div class="method-card method-card-bad">
+        <div class="method-card-label">一般的な日焼け止め</div>
+        <div class="method-anim-wrap" id="animBad">
+          <svg viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg" width="100%" style="max-width:200px;display:block;margin:0 auto;">
+            <text x="100" y="22" text-anchor="middle" font-size="18" fill="rgba(255,200,80,0.7)">☀</text>
+            <line x1="60" y1="28" x2="50" y2="60" stroke="rgba(255,200,80,0.3)" stroke-width="1" stroke-dasharray="3,3"/>
+            <line x1="100" y1="28" x2="100" y2="60" stroke="rgba(255,200,80,0.3)" stroke-width="1" stroke-dasharray="3,3"/>
+            <line x1="140" y1="28" x2="150" y2="60" stroke="rgba(255,200,80,0.3)" stroke-width="1" stroke-dasharray="3,3"/>
+            <!-- 落下粒子 -->
+            <circle r="9" fill="#E8704A" opacity="0.9">
+              <animateMotion dur="1.8s" repeatCount="indefinite" begin="0s">
+                <mpath href="#pathBad1"/>
+              </animateMotion>
+            </circle>
+            <path id="pathBad1" d="M 50,55 L 50,118" fill="none"/>
+            <circle r="9" fill="#E8704A" opacity="0.9">
+              <animateMotion dur="1.8s" repeatCount="indefinite" begin="0.4s">
+                <mpath href="#pathBad2"/>
+              </animateMotion>
+            </circle>
+            <path id="pathBad2" d="M 100,55 L 100,118" fill="none"/>
+            <circle r="9" fill="#E8704A" opacity="0.9">
+              <animateMotion dur="1.8s" repeatCount="indefinite" begin="0.8s">
+                <mpath href="#pathBad3"/>
+              </animateMotion>
+            </circle>
+            <path id="pathBad3" d="M 150,55 L 150,118" fill="none"/>
+            <!-- 肌層 -->
+            <rect x="10" y="120" width="180" height="32" fill="rgba(200,146,74,0.22)" rx="3"/>
+            <text x="100" y="140" text-anchor="middle" font-family="sans-serif" font-size="11" fill="rgba(200,146,74,0.8)">肌</text>
+            <!-- バツ印 -->
+            <text x="100" y="105" text-anchor="middle" font-size="16" fill="rgba(232,112,74,0.7)">✕</text>
+          </svg>
+        </div>
+        <p class="method-card-desc">UV吸収剤が<strong>直接肌に触れる</strong><br>→ 乾燥・重さ・負担の原因に</p>
+      </div>
 
-        <!-- 矢印 -->
-        <text x="360" y="135" text-anchor="middle" font-size="24" fill="rgba(200,146,74,0.5)">→</text>
+      <div class="method-card-arrow">→</div>
 
-        <!-- 右パネル：シラソーマ -->
-        <rect x="400" y="0" width="320" height="260" fill="rgba(200,146,74,0.08)" rx="2"/>
-        <text x="560" y="30" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="11" fill="rgba(200,146,74,0.55)" letter-spacing="3">CYRASOME</text>
-        <!-- 肌の層 -->
-        <rect x="420" y="200" width="280" height="40" fill="rgba(200,146,74,0.2)" rx="2"/>
-        <text x="560" y="225" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="11" fill="rgba(200,146,74,0.7)">肌</text>
-        <!-- カプセル（UV包んだ状態で弾かれる） -->
-        <g>
-          <circle cx="480" cy="160" r="16" fill="none" stroke="rgba(200,146,74,0.6)" stroke-width="1.5">
-            <animate attributeName="cy" values="60;160;160" dur="2.2s" repeatCount="indefinite" begin="0s"/>
-            <animate attributeName="opacity" values="1;1;0.8" dur="2.2s" repeatCount="indefinite" begin="0s"/>
-          </circle>
-          <circle cx="480" cy="160" r="8" fill="rgba(255,120,80,0.5)">
-            <animate attributeName="cy" values="60;160;160" dur="2.2s" repeatCount="indefinite" begin="0s"/>
-            <animate attributeName="opacity" values="1;1;0.8" dur="2.2s" repeatCount="indefinite" begin="0s"/>
-          </circle>
-        </g>
-        <g>
-          <circle cx="540" cy="160" r="16" fill="none" stroke="rgba(200,146,74,0.6)" stroke-width="1.5">
-            <animate attributeName="cy" values="60;160;160" dur="2.2s" repeatCount="indefinite" begin="0.35s"/>
-            <animate attributeName="opacity" values="1;1;0.8" dur="2.2s" repeatCount="indefinite" begin="0.35s"/>
-          </circle>
-          <circle cx="540" cy="160" r="8" fill="rgba(255,120,80,0.5)">
-            <animate attributeName="cy" values="60;160;160" dur="2.2s" repeatCount="indefinite" begin="0.35s"/>
-            <animate attributeName="opacity" values="1;1;0.8" dur="2.2s" repeatCount="indefinite" begin="0.35s"/>
-          </circle>
-        </g>
-        <g>
-          <circle cx="600" cy="160" r="16" fill="none" stroke="rgba(200,146,74,0.6)" stroke-width="1.5">
-            <animate attributeName="cy" values="60;160;160" dur="2.2s" repeatCount="indefinite" begin="0.7s"/>
-            <animate attributeName="opacity" values="1;1;0.8" dur="2.2s" repeatCount="indefinite" begin="0.7s"/>
-          </circle>
-          <circle cx="600" cy="160" r="8" fill="rgba(255,120,80,0.5)">
-            <animate attributeName="cy" values="60;160;160" dur="2.2s" repeatCount="indefinite" begin="0.7s"/>
-            <animate attributeName="opacity" values="1;1;0.8" dur="2.2s" repeatCount="indefinite" begin="0.7s"/>
-          </circle>
-        </g>
-        <text x="560" y="240" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="11" fill="rgba(200,146,74,0.85)">カプセルで包んで届ける</text>
-        <text x="560" y="58" text-anchor="middle" font-size="20" fill="rgba(255,200,80,0.6)">☀</text>
+      <div class="method-card method-card-good">
+        <div class="method-card-label">シラソーマ製法</div>
+        <div class="method-anim-wrap">
+          <svg viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg" width="100%" style="max-width:200px;display:block;margin:0 auto;">
+            <text x="100" y="22" text-anchor="middle" font-size="18" fill="rgba(255,200,80,0.7)">☀</text>
+            <line x1="60" y1="28" x2="50" y2="60" stroke="rgba(255,200,80,0.3)" stroke-width="1" stroke-dasharray="3,3"/>
+            <line x1="100" y1="28" x2="100" y2="60" stroke="rgba(255,200,80,0.3)" stroke-width="1" stroke-dasharray="3,3"/>
+            <line x1="140" y1="28" x2="150" y2="60" stroke="rgba(255,200,80,0.3)" stroke-width="1" stroke-dasharray="3,3"/>
+            <!-- カプセル粒子 -->
+            <g>
+              <circle r="14" fill="none" stroke="rgba(200,146,74,0.7)" stroke-width="1.5" opacity="0.9">
+                <animateMotion dur="2s" repeatCount="indefinite" begin="0s">
+                  <mpath href="#pathGood1"/>
+                </animateMotion>
+              </circle>
+              <circle r="7" fill="rgba(200,146,74,0.4)" opacity="0.9">
+                <animateMotion dur="2s" repeatCount="indefinite" begin="0s">
+                  <mpath href="#pathGood1"/>
+                </animateMotion>
+              </circle>
+            </g>
+            <path id="pathGood1" d="M 50,55 L 50,108" fill="none"/>
+            <g>
+              <circle r="14" fill="none" stroke="rgba(200,146,74,0.7)" stroke-width="1.5" opacity="0.9">
+                <animateMotion dur="2s" repeatCount="indefinite" begin="0.45s">
+                  <mpath href="#pathGood2"/>
+                </animateMotion>
+              </circle>
+              <circle r="7" fill="rgba(200,146,74,0.4)" opacity="0.9">
+                <animateMotion dur="2s" repeatCount="indefinite" begin="0.45s">
+                  <mpath href="#pathGood2"/>
+                </animateMotion>
+              </circle>
+            </g>
+            <path id="pathGood2" d="M 100,55 L 100,108" fill="none"/>
+            <g>
+              <circle r="14" fill="none" stroke="rgba(200,146,74,0.7)" stroke-width="1.5" opacity="0.9">
+                <animateMotion dur="2s" repeatCount="indefinite" begin="0.9s">
+                  <mpath href="#pathGood3"/>
+                </animateMotion>
+              </circle>
+              <circle r="7" fill="rgba(200,146,74,0.4)" opacity="0.9">
+                <animateMotion dur="2s" repeatCount="indefinite" begin="0.9s">
+                  <mpath href="#pathGood3"/>
+                </animateMotion>
+              </circle>
+            </g>
+            <path id="pathGood3" d="M 150,55 L 150,108" fill="none"/>
+            <!-- 肌層 -->
+            <rect x="10" y="120" width="180" height="32" fill="rgba(200,146,74,0.22)" rx="3"/>
+            <text x="100" y="140" text-anchor="middle" font-family="sans-serif" font-size="11" fill="rgba(200,146,74,0.8)">肌</text>
+            <!-- チェック -->
+            <text x="100" y="113" text-anchor="middle" font-size="14" fill="rgba(200,146,74,0.9)">○</text>
+          </svg>
+        </div>
+        <p class="method-card-desc">UV成分を<strong>カプセルに封入</strong>して届ける<br>→ 肌に直接触れずにUVカット</p>
+      </div>
+    </div>
 
-        <!-- 凡例 -->
-        <circle cx="420" cy="252" r="6" fill="rgba(255,120,80,0.85)"/>
-        <text x="432" y="256" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="rgba(254,252,248,0.5)">UV吸収剤</text>
-        <circle cx="500" cy="252" r="10" fill="none" stroke="rgba(200,146,74,0.6)" stroke-width="1.5"/>
-        <circle cx="500" cy="252" r="5" fill="rgba(255,120,80,0.5)"/>
-        <text x="516" y="256" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="rgba(254,252,248,0.5)">シラソーマ（カプセル）</text>
-      </svg>
-      <p>UV吸収剤をマイクロカプセルに封入。肌に直接触れずに紫外線をカット。</p>
+    <!-- 3つの効果 -->
+    <div class="method-effects">
+      <div class="method-effect">
+        <span class="method-effect-icon">💧</span>
+        <p class="method-effect-title">乾燥しにくい</p>
+        <p class="method-effect-sub">うるおい成分もカプセルに配合。SPF50でもキシキシ感ゼロ。</p>
+      </div>
+      <div class="method-effect">
+        <span class="method-effect-icon">🛡</span>
+        <p class="method-effect-title">肌への刺激が少ない</p>
+        <p class="method-effect-sub">吸収剤が直接触れないため、敏感肌にも配慮した設計。</p>
+      </div>
+      <div class="method-effect">
+        <span class="method-effect-icon">✨</span>
+        <p class="method-effect-title">崩れにくい</p>
+        <p class="method-effect-sub">カプセルが皮脂に溶けにくい構造で、夕方まで持続。</p>
+      </div>
     </div>
   </div>
 </section>
@@ -989,7 +1126,9 @@ footer a{color:rgba(254,252,248,.4);text-decoration:none;}
   <div class="inner reveal">
     <p class="eyebrow">EVERY DAY</p>
     <h2>1日あたり、缶コーヒー1本より小さく。</h2>
-    <p class="costs-big">129<span>円 / 日</span></p>
+    <p class="costs-big">
+  <span class="costs-num">129</span><span class="costs-unit">円<small> / 日</small></span>
+</p>
     <p>1本で日焼け止め・化粧下地・ライトファンデーションの役割を担います。「1本でいい」というシンプルさが、毎日続く理由のひとつです。</p>
   </div>
 </section>
@@ -1069,16 +1208,26 @@ footer a{color:rgba(254,252,248,.4);text-decoration:none;}
 
 <!-- ============ トライアル ============ -->
 <section class="trial" id="trial">
-  <div class="inner reveal">
+  <div class="inner-wide reveal">
     <p class="eyebrow" style="text-align:center;">FOR FIRST-TIMERS</p>
     <h2 style="text-align:center;">いきなり1本は不安、という方へ。</h2>
-    <div class="trial-box">
-      <p class="trial-lead">エポラーシェ トライアルセット（990円）があります。</p>
-      <p class="trial-detail">クレンジングから化粧水・美容液・UVクリームまで9種類がセットに。カラーUV＆ベース（0.5g×3包）も含まれています。<strong>税込990円・送料無料</strong>（ネコポス便・ポスト投函）。まず肌との相性を確かめてから、本品をご検討ください。</p>
-      <blockquote class="trial-voice">「サンプルの量に驚きました。こんなに入っていて、この価格で良いんだ！一つ一つ何日か試すことができて、とても満足です。」<span>るなさん・30代・女性（公式サイトレビューより・一部抜粋）</span></blockquote>
-      <a class="btn btn-sun" href="https://www.triplesun.co.jp/shop/products/ec_573">トライアルセットを試してみる（990円）</a>
+    <div class="trial-grid">
+      <div class="trial-img-col">
+        <img src="images/hero.jpg" alt="カラーUV＆ベースを使う女性" onerror="this.style.display='none'" style="width:100%;height:420px;object-fit:cover;object-position:top;">
+        <div class="trial-img-caption">
+          <p>カラーUV＆ベース 30g<br><span>イエロー系ベージュ / SPF50 PA+++</span></p>
+        </div>
+      </div>
+      <div class="trial-text-col">
+        <div class="trial-box">
+          <p class="trial-lead">エポラーシェ トライアルセット（990円）があります。</p>
+          <p class="trial-detail">クレンジングから化粧水・美容液・UVクリームまで9種類がセットに。カラーUV＆ベース（0.5g×3包）も含まれています。<strong>税込990円・送料無料</strong>（ネコポス便・ポスト投函）。まず肌との相性を確かめてから、本品をご検討ください。</p>
+          <blockquote class="trial-voice">「サンプルの量に驚きました。こんなに入っていて、この価格で良いんだ！一つ一つ何日か試すことができて、とても満足です。」<span>るなさん・30代・女性（公式サイトレビューより・一部抜粋）</span></blockquote>
+          <a class="btn btn-sun" href="https://www.triplesun.co.jp/shop/products/ec_573">トライアルセットを試してみる（990円）</a>
+        </div>
+      </div>
     </div>
-    <p class="trial-note">※ネコポス便（ポスト投函）のため、お届け日時の指定はできません。<br>※おひとり様1点限りのご注文です。</p>
+    <p class="trial-note" style="text-align:center;">※ネコポス便（ポスト投函）のため、お届け日時の指定はできません。<br>※おひとり様1点限りのご注文です。</p>
   </div>
 </section>
 
@@ -1087,12 +1236,18 @@ footer a{color:rgba(254,252,248,.4);text-decoration:none;}
   <div class="inner reveal">
     <p class="eyebrow" style="text-align:center;">ORDER</p>
     <h2 style="text-align:center;">まずは、ひとつから。</h2>
-    <div class="order-single">
-      <div class="order-card">
-        <p class="plan">単品購入</p>
-        <p class="price">5,830<small>円（税込）</small></p>
-        <p class="per">30g・使用目安 約1〜1.5ヶ月／1日あたり約129〜194円</p>
-        <a class="btn btn-sun" href="https://www.triplesun.co.jp/shop/products/ec_549_single">カラーUV＆ベースをご注文する</a>
+    <div class="order-with-img">
+      <div class="order-img-col">
+        <img src="images/step-blend.jpg" alt="カラーUV＆ベースとUVデイクリームのブレンド" onerror="this.style.display='none'" style="width:100%;height:280px;object-fit:cover;">
+        <img src="images/step-2.jpg" alt="パール1粒のテクスチャー" onerror="this.style.display='none'" style="width:100%;height:280px;object-fit:cover;margin-top:4px;">
+      </div>
+      <div class="order-card-col">
+        <div class="order-card">
+          <p class="plan">単品購入</p>
+          <p class="price">5,830<small>円（税込）</small></p>
+          <p class="per">30g・使用目安 約1〜1.5ヶ月／1日あたり約129〜194円</p>
+          <a class="btn btn-sun" href="https://www.triplesun.co.jp/shop/products/ec_549_single">カラーUV＆ベースをご注文する</a>
+        </div>
       </div>
     </div>
     <div class="teiki-info">
