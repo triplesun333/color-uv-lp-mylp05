@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>カラーUV＆ベース 30g｜SPF50 PA+++｜無添加UV化粧下地｜エポラーシェ公式</title>
+<meta name="description" content="天然鉱石のイエロー系ベージュが肌色を選ばずフィット。シラソーマ製法で高SPF50でも乾燥しにくい。エポラーシェ公式。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --base:#FEFCF8;
+  --sand:#F4E8D4;
+  --sand-deep:#E8D4B8;
+  --sun:#C8924A;
+  --sun-pale:#FAF0E0;
+  --sun-light:#FDF5E8;
+  --charcoal:#282420;
+  --charcoal-soft:#3E3830;
+  --mist:#7A7068;
+  --white:#FFFFFF;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:'Noto Sans JP',sans-serif;
+  background:var(--base);
+  color:var(--charcoal);
+  line-height:1.9;
+  font-size:16px;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block;}
+.serif{font-family:'Shippori Mincho',serif;}
+.num-face{font-family:'Cormorant Garamond',serif;}
+.inner{max-width:860px;margin:0 auto;padding:0 28px;}
+.inner-wide{max-width:1100px;margin:0 auto;padding:0 28px;}
+section{padding:100px 0;}
+
+.eyebrow{
+  font-size:11px;letter-spacing:.5em;color:var(--sun);
+  margin-bottom:16px;text-transform:uppercase;font-weight:500;
+}
+h2{
+  font-family:'Shippori Mincho',serif;
+  font-size:clamp(26px,3.6vw,38px);
+  font-weight:500;letter-spacing:.06em;line-height:1.85;
+  margin-bottom:32px;
+}
+.lead{color:var(--mist);max-width:38em;font-size:15.5px;line-height:2;}
+
+/* ======== ヒーロー：スプリットレイアウト ======== */
+.hero{
+  position:relative;
+  min-height:95vh;
+  background:var(--base);
+  display:flex;align-items:stretch;
+  overflow:hidden;
+}
+.hero-photo{
+  position:absolute;inset:0;
+  width:65%;height:100%;
+  object-fit:cover;object-position:center top;
+}
+/* 右側フォグ：写真を自然に切り出す */
+.hero-fog{
+  position:absolute;inset:0;
+  background:linear-gradient(90deg,
+    rgba(254,252,248,0) 0%,
+    rgba(254,252,248,0) 40%,
+    rgba(254,252,248,.6) 58%,
+    rgba(254,252,248,.97) 72%,
+    rgba(254,252,248,1) 100%
+  );
+}
+/* 上下のソフトフェード */
+.hero-fog-bottom{
+  position:absolute;bottom:0;left:0;right:0;height:160px;
+  background:linear-gradient(to top,rgba(254,252,248,1) 0%,rgba(254,252,248,0) 100%);
+}
+.hero-content{
+  position:relative;z-index:2;
+  width:100%;
+  display:flex;align-items:center;justify-content:flex-end;
+  padding:80px 28px 80px 0;
+  max-width:1100px;margin:0 auto;
+}
+.hero-text{
+  width:44%;
+  padding-left:0;
+}
+.hero-brand{
+  font-size:11px;letter-spacing:.5em;color:var(--sun);
+  margin-bottom:28px;font-weight:500;
+}
+.hero-copy{
+  font-family:'Shippori Mincho',serif;
+  font-size:clamp(28px,4.2vw,46px);
+  font-weight:500;line-height:1.85;letter-spacing:.08em;
+  margin-bottom:24px;
+  color:var(--charcoal);
+}
+.hero-copy em{
+  font-style:normal;
+  color:var(--sun);
+  border-bottom:1px solid var(--sun-pale);
+  padding-bottom:2px;
+}
+.hero-sub{
+  font-size:14.5px;color:var(--mist);
+  line-height:2.1;margin-bottom:32px;
+  max-width:26em;
+}
+.hero-rating{
+  display:flex;align-items:center;gap:10px;margin-bottom:32px;
+}
+.hero-rating .stars{color:var(--sun);font-size:15px;letter-spacing:2px;}
+.hero-rating .txt{font-size:13px;color:var(--mist);letter-spacing:.04em;}
+.hero-spf{
+  display:inline-block;
+  background:var(--charcoal);color:var(--base);
+  font-family:'Cormorant Garamond',serif;
+  font-size:13px;letter-spacing:.28em;
+  padding:6px 18px;margin-bottom:28px;
+}
+
+/* ======== ボタン ======== */
+.btn{
+  display:inline-block;
+  font-family:'Shippori Mincho',serif;
+  font-size:15px;letter-spacing:.2em;
+  padding:18px 52px;text-decoration:none;
+  transition:all .22s ease;text-align:center;cursor:pointer;
+}
+.btn-sun{background:var(--sun);color:#fff;}
+.btn-sun:hover{background:#A87438;color:#fff;}
+.btn-outline{
+  background:transparent;color:var(--charcoal);
+  border:1px solid var(--charcoal);
+}
+.btn-outline:hover{background:var(--charcoal);color:var(--white);}
+.btn:focus-visible{outline:3px solid var(--sun);outline-offset:3px;}
+
+/* ======== 信頼バー ======== */
+.trust-bar{background:var(--charcoal);}
+.trust-bar-inner{
+  max-width:1100px;margin:0 auto;padding:14px 28px;
+  display:flex;justify-content:center;gap:40px;flex-wrap:wrap;
+}
+.trust-bar-inner span{
+  font-size:12px;letter-spacing:.1em;color:rgba(255,255,255,.75);
+  position:relative;padding-left:16px;
+}
+.trust-bar-inner span::before{
+  content:"◆";position:absolute;left:0;top:0;
+  color:var(--sun);font-size:8px;line-height:2.4;
+}
+
+/* ======== 共感 ======== */
+.empathy{background:var(--white);}
+.empathy-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;
+  max-width:1100px;margin:0 auto;padding:0 28px;
+}
+.empathy-list{list-style:none;margin:28px 0 32px;}
+.empathy-list li{
+  font-family:'Shippori Mincho',serif;
+  font-size:17px;line-height:1.9;
+  padding:15px 0 15px 28px;position:relative;
+  border-bottom:1px solid var(--sand);
+  color:var(--charcoal-soft);
+}
+.empathy-list li::before{
+  content:"";position:absolute;left:0;top:50%;transform:translateY(-50%);
+  width:10px;height:1px;background:var(--sun);
+}
+.empathy-close{
+  font-family:'Shippori Mincho',serif;
+  font-size:18.5px;line-height:2.1;color:var(--charcoal);
+}
+.empathy-img-wrap{position:relative;}
+.empathy-img-wrap img{width:100%;height:540px;object-fit:cover;object-position:top;}
+/* サンカラーのアクセントライン */
+.empathy-img-wrap::before{
+  content:"";position:absolute;bottom:-20px;right:-20px;
+  width:60%;height:60%;
+  border-bottom:2px solid var(--sun);
+  border-right:2px solid var(--sun);
+  z-index:-1;
+}
+
+/* ======== 漫画 ======== */
+.manga{background:var(--sun-light);}
+.manga-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:2px;
+  margin-top:16px;background:var(--sand-deep);
+}
+.manga-grid figure{margin:0;background:var(--base);}
+.manga-grid img{
+  width:100%;aspect-ratio:1/1;object-fit:cover;
+}
+.manga-grid figcaption{
+  font-size:13px;color:var(--mist);line-height:1.8;
+  padding:16px 20px 20px;
+}
+
+/* ======== シラソーマ製法図解 ======== */
+.method{background:var(--charcoal);}
+.method .eyebrow{color:var(--sun);}
+.method h2{color:var(--base);}
+.method .lead{color:rgba(254,252,248,.6);}
+.method-diagram{
+  display:grid;grid-template-columns:1fr 60px 1fr;gap:0;
+  align-items:center;margin-top:52px;
+}
+.method-col{
+  padding:40px 36px;
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.1);
+}
+.method-col.good{
+  background:rgba(200,146,74,.12);
+  border:1px solid rgba(200,146,74,.35);
+}
+.method-col-label{
+  font-size:11px;letter-spacing:.4em;margin-bottom:18px;color:rgba(254,252,248,.45);
+}
+.method-col-title{
+  font-family:'Shippori Mincho',serif;font-size:18px;
+  letter-spacing:.1em;margin-bottom:20px;color:var(--base);
+  line-height:1.7;
+}
+.method-col.good .method-col-title{color:var(--sun);}
+.method-col p{font-size:14px;color:rgba(254,252,248,.65);line-height:2.1;}
+.method-col.good p{color:rgba(254,252,248,.82);}
+.method-arrow{text-align:center;font-size:28px;color:var(--sun);opacity:.5;}
+
+/* SVGアニメーション領域 */
+.capsule-demo{margin-top:60px;text-align:center;}
+.capsule-demo p{font-size:13px;color:rgba(254,252,248,.4);letter-spacing:.15em;margin-top:18px;}
+
+/* ======== 数字 ======== */
+.numbers{background:var(--sand);}
+.numbers-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:0;
+  margin-top:8px;
+  border:1px solid var(--sand-deep);
+}
+.num-item{
+  padding:48px 36px;
+  border-left:1px solid var(--sand-deep);
+  text-align:center;
+}
+.num-item:first-child{border-left:none;}
+.num-item .value{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(48px,5.5vw,64px);font-weight:500;color:var(--charcoal);
+  line-height:1.1;letter-spacing:-.01em;
+}
+.num-item .value sup{font-size:22px;vertical-align:super;}
+.num-item .value sub{font-size:18px;vertical-align:baseline;}
+.num-item .label{
+  font-size:11px;letter-spacing:.3em;color:var(--sun);
+  margin:12px 0 16px;font-weight:500;
+}
+.num-item .desc{font-size:13.5px;color:var(--mist);line-height:1.95;text-align:left;}
+
+/* ======== ストーリー ======== */
+.story{background:var(--base);}
+.story-grid{
+  display:grid;grid-template-columns:360px 1fr;gap:80px;align-items:start;
+  max-width:1100px;margin:0 auto;padding:0 28px;
+}
+.story-photo{position:sticky;top:60px;}
+.story-photo img{
+  width:100%;height:520px;object-fit:cover;object-position:top;
+  filter:saturate(0.95);
+}
+.story-photo .caption{
+  font-size:11.5px;letter-spacing:.2em;color:var(--sun);
+  margin-top:14px;text-align:center;font-weight:500;
+}
+.story-body p{margin-bottom:1.6em;color:var(--mist);font-size:15.5px;line-height:2.1;}
+.story-quote{
+  font-family:'Shippori Mincho',serif;
+  font-size:clamp(17px,2vw,21px);line-height:2.1;
+  color:var(--charcoal);margin:2.4em 0;
+  padding:24px 28px;
+  background:var(--sun-pale);
+  border-left:3px solid var(--sun);
+}
+.story-box{
+  background:var(--sand);padding:28px 30px;margin:2em 0;
+  font-size:14.5px;line-height:2.1;color:var(--charcoal-soft);
+}
+.story-box strong{
+  font-family:'Shippori Mincho',serif;font-size:16.5px;
+  display:block;margin-bottom:10px;color:var(--charcoal);
+}
+
+/* ======== UVシリーズ比較（新セクション） ======== */
+.lineup{background:var(--sun-pale);}
+.lineup table{
+  width:100%;border-collapse:collapse;font-size:14px;
+  margin-top:8px;background:var(--white);
+}
+.lineup th,.lineup td{
+  border:1px solid var(--sand-deep);padding:14px 18px;text-align:left;
+  line-height:1.8;
+}
+.lineup thead th{
+  background:var(--charcoal);color:var(--base);
+  font-weight:500;letter-spacing:.06em;font-size:13px;
+}
+.lineup tbody tr:nth-child(odd){background:var(--base);}
+.lineup tbody tr:nth-child(even){background:#FFFDF9;}
+.lineup .hl td{background:var(--sun-pale)!important;font-weight:500;}
+.lineup .hl td:first-child::before{
+  content:"▶ ";color:var(--sun);
+}
+.lineup caption{
+  font-size:12px;color:var(--mist);text-align:right;
+  padding-bottom:10px;caption-side:bottom;letter-spacing:.04em;
+}
+
+/* ======== 使い方 ======== */
+.howto{background:var(--white);}
+.howto-steps{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:16px;
+}
+.step{background:var(--base);border-top:2px solid var(--sand-deep);}
+.step img{width:100%;height:220px;object-fit:cover;}
+.step-body{padding:24px 26px 28px;}
+.step-no{
+  font-family:'Cormorant Garamond',serif;
+  font-size:40px;font-weight:400;color:var(--sand-deep);
+  line-height:1;margin-bottom:10px;
+}
+.step-body h3{
+  font-family:'Shippori Mincho',serif;font-size:17px;
+  margin-bottom:8px;line-height:1.65;font-weight:500;
+}
+.step-body p{font-size:13.5px;color:var(--mist);line-height:2.05;}
+.howto-arrange{
+  margin-top:32px;background:var(--sun-light);
+  display:grid;grid-template-columns:300px 1fr;gap:0;
+}
+.howto-arrange img{width:100%;height:220px;object-fit:cover;}
+.howto-arrange-text{padding:32px 36px;display:flex;flex-direction:column;justify-content:center;}
+.howto-arrange-text h3{
+  font-family:'Shippori Mincho',serif;font-size:17.5px;
+  margin-bottom:12px;font-weight:500;letter-spacing:.08em;
+}
+.howto-arrange-text p{font-size:14px;color:var(--mist);line-height:2.1;}
+
+/* ======== 声 ======== */
+.voices{background:var(--sand);}
+.voice-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:8px;
+}
+.voice-card{
+  background:var(--white);padding:32px 28px;
+  border-top:2px solid var(--sun);
+  display:flex;flex-direction:column;
+}
+.voice-card .vt{
+  font-family:'Shippori Mincho',serif;font-size:15px;
+  color:var(--charcoal);margin-bottom:12px;font-weight:500;
+  letter-spacing:.06em;
+}
+.voice-card .q{
+  font-size:14px;color:var(--charcoal-soft);line-height:2.1;flex:1;
+}
+.voice-card .meta{
+  font-size:11.5px;color:var(--mist);margin-top:18px;letter-spacing:.04em;
+}
+.voices .disclaimer{font-size:12px;color:var(--mist);text-align:center;margin-top:22px;}
+
+/* ======== 数字バー（リピート率） ======== */
+.trust-pills{
+  display:flex;justify-content:center;gap:0;margin-top:52px;
+  border:1px solid var(--sand-deep);
+}
+.trust-pill{
+  flex:1;text-align:center;padding:28px 18px;
+  border-left:1px solid var(--sand-deep);
+}
+.trust-pill:first-child{border-left:none;}
+.trust-pill .t1{
+  font-family:'Cormorant Garamond',serif;font-size:28px;
+  color:var(--sun);line-height:1.2;margin-bottom:6px;
+}
+.trust-pill .t2{font-size:12px;color:var(--mist);line-height:1.7;}
+
+/* ======== コスパ ======== */
+.costs{background:var(--charcoal);color:var(--base);text-align:center;}
+.costs .eyebrow{color:var(--sun);}
+.costs h2{color:var(--base);}
+.costs-big{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(64px,10vw,96px);font-weight:400;color:var(--sun);
+  line-height:1;margin:10px 0 2px;letter-spacing:-.02em;
+}
+.costs-big span{font-size:clamp(22px,3vw,32px);vertical-align:middle;margin-left:6px;}
+.costs p{color:rgba(254,252,248,.6);max-width:32em;margin:0 auto;font-size:15px;line-height:2;}
+
+/* ======== 成分 ======== */
+.spec-table{width:100%;border-collapse:collapse;font-size:14px;background:var(--white);}
+.spec-table th,.spec-table td{border:1px solid var(--sand-deep);padding:13px 20px;text-align:left;}
+.spec-table th{font-weight:500;background:var(--sun-pale);width:34%;font-size:13px;letter-spacing:.04em;}
+.spec-caption{font-size:12.5px;color:var(--mist);margin-top:14px;line-height:2.1;}
+
+/* ======== 正直に言うと ======== */
+.fitcheck{background:var(--base);}
+.fit-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:8px;}
+.fit-col{padding:36px 34px;background:var(--white);}
+.fit-col h3{
+  font-family:'Shippori Mincho',serif;font-size:17px;
+  letter-spacing:.12em;margin-bottom:20px;font-weight:500;
+}
+.fit-no{border-top:2px solid var(--mist);}
+.fit-yes{border-top:2px solid var(--sun);}
+.fit-col ul{list-style:none;}
+.fit-col li{
+  font-size:14px;color:var(--charcoal-soft);line-height:2;
+  padding:10px 0 10px 22px;position:relative;
+  border-bottom:1px solid var(--sand);
+}
+.fit-no li::before{content:"−";position:absolute;left:2px;color:var(--mist);}
+.fit-yes li::before{content:"＋";position:absolute;left:2px;color:var(--sun);}
+.fit-note{
+  font-family:'Shippori Mincho',serif;font-size:14px;
+  color:var(--mist);margin-top:22px;text-align:right;letter-spacing:.06em;
+}
+
+/* ======== 中間CTA ======== */
+.mid-cta{text-align:center;margin-top:52px;}
+.microcopy{font-size:12.5px;color:var(--mist);margin-top:12px;letter-spacing:.04em;}
+
+/* ======== Q&A ======== */
+.faq{background:var(--sun-light);}
+.faq details{border-bottom:1px solid var(--sand-deep);}
+.faq details:first-of-type{border-top:1px solid var(--sand-deep);}
+.faq summary{
+  font-family:'Shippori Mincho',serif;
+  font-size:16px;padding:24px 40px 24px 44px;cursor:pointer;
+  position:relative;letter-spacing:.04em;list-style:none;color:var(--charcoal);
+}
+.faq summary::-webkit-details-marker{display:none;}
+.faq summary::before{
+  content:"Q";position:absolute;left:4px;top:24px;
+  font-family:'Cormorant Garamond',serif;color:var(--sun);font-size:18px;font-weight:600;
+}
+.faq summary::after{
+  content:"＋";position:absolute;right:8px;top:24px;color:var(--sun);
+}
+.faq details[open] summary::after{content:"−";}
+.faq .a{
+  padding:0 40px 26px 44px;font-size:14px;color:var(--mist);line-height:2.1;
+  position:relative;
+}
+.faq .a::before{
+  content:"A";position:absolute;left:4px;top:0;
+  font-family:'Cormorant Garamond',serif;color:var(--sand-deep);font-size:18px;font-weight:600;
+}
+
+/* ======== トライアル ======== */
+.trial{background:var(--sand);}
+.trial-box{
+  background:var(--white);border:1px solid var(--sand-deep);
+  padding:48px 42px;text-align:center;max-width:600px;margin:0 auto;
+}
+.trial-lead{font-family:'Shippori Mincho',serif;font-size:18px;margin-bottom:16px;font-weight:500;}
+.trial-detail{font-size:14px;color:var(--mist);line-height:2.1;margin-bottom:26px;}
+.trial-voice{
+  font-family:'Shippori Mincho',serif;font-size:14.5px;line-height:2.1;
+  text-align:left;background:var(--sun-pale);padding:22px 26px;margin:0 0 28px;
+  border-left:2px solid var(--sun);
+}
+.trial-voice span{
+  display:block;font-family:'Noto Sans JP',sans-serif;
+  font-size:12px;color:var(--mist);margin-top:10px;text-align:right;
+}
+.trial-note{text-align:center;font-size:12px;color:var(--mist);margin-top:18px;}
+
+/* ======== 購入 ======== */
+.order{background:var(--base);}
+.order-single{max-width:560px;margin:16px auto 0;}
+.order-card{
+  background:var(--white);border:1px solid var(--sand-deep);
+  padding:48px 42px;text-align:center;
+}
+.order-card .plan{
+  font-size:12px;letter-spacing:.4em;color:var(--sun);
+  margin-bottom:16px;font-weight:500;
+}
+.order-card .price{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(42px,5vw,54px);font-weight:500;color:var(--charcoal);
+  line-height:1.2;letter-spacing:-.01em;
+}
+.order-card .price small{font-family:'Noto Sans JP',sans-serif;font-size:15px;font-weight:400;margin-left:4px;}
+.order-card .per{font-size:12.5px;color:var(--mist);margin:8px 0 28px;}
+.teiki-info{
+  max-width:640px;margin:32px auto 0;
+  background:var(--sun-pale);padding:28px 34px;
+  font-size:14px;color:var(--charcoal-soft);line-height:2.1;
+}
+.teiki-info .t-head{
+  font-family:'Shippori Mincho',serif;font-size:16px;
+  color:var(--sun);margin-bottom:8px;font-weight:500;
+}
+.teiki-info .teiki-link{
+  display:inline-block;margin-top:14px;font-size:13.5px;
+  color:var(--sun);text-decoration:none;
+  border-bottom:1px solid var(--sun);padding-bottom:2px;
+}
+.teiki-info .teiki-link:hover{color:var(--charcoal);}
+.order .tel{margin-top:52px;text-align:center;font-size:14px;color:var(--mist);}
+.order .tel .num{
+  font-family:'Cormorant Garamond',serif;font-size:32px;
+  color:var(--charcoal);display:block;margin:8px 0 4px;letter-spacing:.04em;
+}
+.order .tel a{color:var(--charcoal);text-decoration:none;}
+
+/* ======== 最終メッセージ ======== */
+.final{
+  position:relative;
+  overflow:hidden;
+  background:var(--charcoal);
+  text-align:center;
+}
+.final-bg{
+  position:absolute;inset:0;width:100%;height:100%;
+  object-fit:cover;opacity:.35;
+  filter:saturate(.7);
+}
+.final-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(160deg,rgba(40,36,32,.8) 0%,rgba(40,36,32,.5) 100%);
+}
+.final .inner{position:relative;z-index:2;}
+.final .msg{
+  font-family:'Shippori Mincho',serif;
+  font-size:clamp(22px,3.2vw,34px);line-height:2.3;letter-spacing:.14em;
+  margin-bottom:44px;color:var(--base);
+}
+.final .msg em{font-style:normal;color:var(--sun);}
+
+/* ======== 直営店案内 ======== */
+.shop-info{background:var(--white);border-top:1px solid var(--sand);}
+.shop-info .shop-lead{
+  color:var(--mist);max-width:36em;margin:0 auto 36px;
+  text-align:center;font-size:15px;line-height:2;
+}
+
+footer{
+  background:var(--charcoal);
+  padding:44px 28px;text-align:center;font-size:12px;
+  color:rgba(254,252,248,.4);letter-spacing:.08em;line-height:2.3;
+}
+footer a{color:rgba(254,252,248,.4);text-decoration:none;}
+
+/* ======== 追従CTA ======== */
+.sticky-cta{
+  position:fixed;left:0;right:0;bottom:0;z-index:99;
+  transform:translateY(110%);transition:transform .3s ease;
+  padding:10px 14px calc(10px + env(safe-area-inset-bottom));
+  background:rgba(40,36,32,.97);backdrop-filter:blur(8px);
+  display:none;
+}
+.sticky-cta.show{transform:none;}
+.sticky-cta a{
+  display:block;text-align:center;text-decoration:none;
+  font-family:'Shippori Mincho',serif;font-size:15px;letter-spacing:.12em;
+  color:var(--charcoal);background:var(--sun);
+  padding:15px 10px;
+}
+.sticky-cta a strong{font-size:17.5px;margin-left:8px;}
+
+/* ======== リビール ======== */
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .75s ease,transform .75s ease;}
+.reveal.on{opacity:1;transform:none;}
+
+/* ======== レスポンシブ ======== */
+@media (max-width:860px){
+  section{padding:76px 0;}
+  .manga-grid{grid-template-columns:1fr 1fr;}
+  .fit-grid{grid-template-columns:1fr;}
+  .empathy-grid{grid-template-columns:1fr;gap:48px;}
+  .empathy-img-wrap img{height:380px;}
+  .empathy-img-wrap::before{display:none;}
+  .method-diagram{grid-template-columns:1fr;gap:1px;}
+  .method-arrow{transform:rotate(90deg);padding:16px 0;}
+  .numbers-grid{grid-template-columns:1fr;}
+  .num-item{border-left:none;border-top:1px solid var(--sand-deep);}
+  .num-item:first-child{border-top:none;}
+  .story-grid{grid-template-columns:1fr;gap:44px;}
+  .story-photo{position:static;}
+  .story-photo img{height:420px;}
+  .howto-steps{grid-template-columns:1fr;}
+  .howto-arrange{grid-template-columns:1fr;}
+  .howto-arrange img{height:200px;}
+  .voice-grid{grid-template-columns:1fr;}
+  .trust-pills{flex-direction:column;}
+  .trust-pill{border-left:none;border-top:1px solid var(--sand-deep);}
+  .trust-pill:first-child{border-top:none;}
+  .hero{min-height:88vh;}
+  .hero-photo{width:100%;}
+  .hero-fog{
+    background:linear-gradient(180deg,
+      rgba(254,252,248,0) 0%,
+      rgba(254,252,248,0) 30%,
+      rgba(254,252,248,.85) 62%,
+      rgba(254,252,248,.99) 100%
+    );
+  }
+  .hero-content{justify-content:center;padding:80px 24px;}
+  .hero-text{width:100%;}
+  .sticky-cta{display:block;}
+  .lineup{overflow-x:auto;}
+  .lineup table{min-width:600px;}
+}
+@media (prefers-reduced-motion:reduce){
+  .sticky-cta{transition:none;}
+  .reveal{opacity:1;transform:none;transition:none;}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ ヒーロー ============ -->
+<header class="hero">
+  <img class="hero-photo" src="images/hero.jpg" alt="朝の窓辺、穏やかに微笑みながらUV下地を馴染ませる女性" onerror="this.style.display='none'">
+  <div class="hero-fog"></div>
+  <div class="hero-fog-bottom"></div>
+  <div class="hero-content">
+    <div class="hero-text">
+      <p class="hero-brand">EPORASHE ｜ エポラーシェ</p>
+      <div class="hero-spf">SPF 50 / PA+++</div>
+      <h1 class="hero-copy">今日も、<br><em>素肌のままで</em><br>出かけられる。</h1>
+      <p class="hero-sub">日焼け止めをつけるたびに、乾く。重い。崩れる。——そんな経験を手放したくて、美容研究家が10年以上使い続けている下地があります。</p>
+      <div class="hero-rating">
+        <span class="stars">★★★★★</span>
+        <span class="txt">4.9 / 5.0（28件のレビュー）</span>
+      </div>
+      <a class="btn btn-sun" href="#order">ご購入はこちら</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ 信頼バー ============ -->
+<div class="trust-bar">
+  <div class="trust-bar-inner">
+    <span>★4.9 公式レビュー28件</span>
+    <span>SPF50 PA+++ 無添加処方</span>
+    <span>国内製造・原産国日本</span>
+    <span>トライアルセット990円・送料無料</span>
+  </div>
+</div>
+
+<!-- ============ 共感 ============ -->
+<section class="empathy">
+  <div class="empathy-grid">
+    <div class="reveal">
+      <p class="eyebrow">FOR YOU</p>
+      <h2>その日焼け止め、<br>心から信頼できていましたか。</h2>
+      <ul class="empathy-list">
+        <li>塗るたびに肌がつっぱって、乾燥が気になる</li>
+        <li>SPFが高いものは崩れやすくて、夕方がつらい</li>
+        <li>ファンデと下地と日焼け止めで、顔が重い</li>
+        <li>敏感肌だから、成分が気になって選べない</li>
+      </ul>
+      <p class="empathy-close">ひとつでも頷いたなら、<br>このページはあなたのために書きました。</p>
+    </div>
+    <div class="empathy-img-wrap reveal">
+      <img src="images/empathy.jpg" alt="頬にそっと手をあて肌を確かめる女性" onerror="this.style.display='none'">
+    </div>
+  </div>
+</section>
+
+<!-- ============ 30秒漫画 ============ -->
+<section class="manga">
+  <div class="inner-wide reveal">
+    <p class="eyebrow" style="text-align:center;">STORY IN 30 SEC</p>
+    <h2 style="text-align:center;">30秒でわかる、誕生秘話。</h2>
+    <div class="manga-grid">
+      <figure>
+        <img src="images/manga1.jpg" alt="結婚式でデパコスのUVベースに違和感を覚える美希" onerror="this.style.display='none'">
+        <figcaption>久しぶりに使ったデパコスのUVベース。「まるでペンキみたい」——その夜、炎症が起きた。</figcaption>
+      </figure>
+      <figure>
+        <img src="images/manga2.jpg" alt="開発に没頭する美希" onerror="this.style.display='none'">
+        <figcaption>「毎日つける人だからこそ、本当に優しいものを」と、開発に没頭し始めた。</figcaption>
+      </figure>
+      <figure>
+        <img src="images/manga3.jpg" alt="シラソーマ製法との出会いに興奮する美希" onerror="this.style.display='none'">
+        <figcaption>転機は「シラソーマ製法」との出会い。興奮して眠れなかった夜を、今でも覚えている。</figcaption>
+      </figure>
+      <figure>
+        <img src="images/manga4.jpg" alt="完成したカラーUVを手にする美希" onerror="this.style.display='none'">
+        <figcaption>お客様の声に応えて生まれた、カラーUV＆ベース。リピート率80%以上が、答えになった。</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ シラソーマ製法（図解） ============ -->
+<section class="method">
+  <div class="inner reveal">
+    <p class="eyebrow">THE TECHNOLOGY</p>
+    <h2>「SPFが高い＝乾く」は、<br>もう古い話です。</h2>
+    <p class="lead">一般的な日焼け止めは、紫外線カット成分が直接肌に触れます。だから乾く。崩れる。シラソーマ製法は、その問題を根本から解決します。</p>
+
+    <!-- SVGアニメーション図解 -->
+    <div class="capsule-demo">
+      <svg viewBox="0 0 720 260" xmlns="http://www.w3.org/2000/svg" style="max-width:720px;width:100%;display:block;margin:0 auto;">
+        <!-- 左パネル：通常UV -->
+        <rect x="0" y="0" width="320" height="260" fill="rgba(255,255,255,0.05)" rx="2"/>
+        <text x="160" y="30" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="11" fill="rgba(254,252,248,0.4)" letter-spacing="4">CONVENTIONAL UV</text>
+        <!-- 肌の層 -->
+        <rect x="20" y="200" width="280" height="40" fill="rgba(200,146,74,0.2)" rx="2"/>
+        <text x="160" y="225" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="11" fill="rgba(200,146,74,0.7)">肌</text>
+        <!-- UV粒子が直接当たる -->
+        <circle class="uv-bad-1" cx="80" cy="160" r="10" fill="rgba(255,120,80,0.85)">
+          <animate attributeName="cy" values="60;170;170" dur="2.2s" repeatCount="indefinite" begin="0s"/>
+          <animate attributeName="opacity" values="1;1;0" dur="2.2s" repeatCount="indefinite" begin="0s"/>
+        </circle>
+        <circle cx="140" cy="160" r="10" fill="rgba(255,120,80,0.85)">
+          <animate attributeName="cy" values="60;170;170" dur="2.2s" repeatCount="indefinite" begin="0.3s"/>
+          <animate attributeName="opacity" values="1;1;0" dur="2.2s" repeatCount="indefinite" begin="0.3s"/>
+        </circle>
+        <circle cx="200" cy="160" r="10" fill="rgba(255,120,80,0.85)">
+          <animate attributeName="cy" values="60;170;170" dur="2.2s" repeatCount="indefinite" begin="0.6s"/>
+          <animate attributeName="opacity" values="1;1;0" dur="2.2s" repeatCount="indefinite" begin="0.6s"/>
+        </circle>
+        <circle cx="260" cy="160" r="10" fill="rgba(255,120,80,0.85)">
+          <animate attributeName="cy" values="60;170;170" dur="2.2s" repeatCount="indefinite" begin="0.9s"/>
+          <animate attributeName="opacity" values="1;1;0" dur="2.2s" repeatCount="indefinite" begin="0.9s"/>
+        </circle>
+        <!-- 太陽光線 -->
+        <text x="160" y="58" text-anchor="middle" font-size="20" fill="rgba(255,200,80,0.6)">☀</text>
+        <text x="160" y="240" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="11" fill="rgba(255,120,80,0.7)">UV成分が直接肌へ</text>
+
+        <!-- 矢印 -->
+        <text x="360" y="135" text-anchor="middle" font-size="24" fill="rgba(200,146,74,0.5)">→</text>
+
+        <!-- 右パネル：シラソーマ -->
+        <rect x="400" y="0" width="320" height="260" fill="rgba(200,146,74,0.08)" rx="2"/>
+        <text x="560" y="30" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="11" fill="rgba(200,146,74,0.55)" letter-spacing="3">CYRASOME</text>
+        <!-- 肌の層 -->
+        <rect x="420" y="200" width="280" height="40" fill="rgba(200,146,74,0.2)" rx="2"/>
+        <text x="560" y="225" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="11" fill="rgba(200,146,74,0.7)">肌</text>
+        <!-- カプセル（UV包んだ状態で弾かれる） -->
+        <g>
+          <circle cx="480" cy="160" r="16" fill="none" stroke="rgba(200,146,74,0.6)" stroke-width="1.5">
+            <animate attributeName="cy" values="60;160;160" dur="2.2s" repeatCount="indefinite" begin="0s"/>
+            <animate attributeName="opacity" values="1;1;0.8" dur="2.2s" repeatCount="indefinite" begin="0s"/>
+          </circle>
+          <circle cx="480" cy="160" r="8" fill="rgba(255,120,80,0.5)">
+            <animate attributeName="cy" values="60;160;160" dur="2.2s" repeatCount="indefinite" begin="0s"/>
+            <animate attributeName="opacity" values="1;1;0.8" dur="2.2s" repeatCount="indefinite" begin="0s"/>
+          </circle>
+        </g>
+        <g>
+          <circle cx="540" cy="160" r="16" fill="none" stroke="rgba(200,146,74,0.6)" stroke-width="1.5">
+            <animate attributeName="cy" values="60;160;160" dur="2.2s" repeatCount="indefinite" begin="0.35s"/>
+            <animate attributeName="opacity" values="1;1;0.8" dur="2.2s" repeatCount="indefinite" begin="0.35s"/>
+          </circle>
+          <circle cx="540" cy="160" r="8" fill="rgba(255,120,80,0.5)">
+            <animate attributeName="cy" values="60;160;160" dur="2.2s" repeatCount="indefinite" begin="0.35s"/>
+            <animate attributeName="opacity" values="1;1;0.8" dur="2.2s" repeatCount="indefinite" begin="0.35s"/>
+          </circle>
+        </g>
+        <g>
+          <circle cx="600" cy="160" r="16" fill="none" stroke="rgba(200,146,74,0.6)" stroke-width="1.5">
+            <animate attributeName="cy" values="60;160;160" dur="2.2s" repeatCount="indefinite" begin="0.7s"/>
+            <animate attributeName="opacity" values="1;1;0.8" dur="2.2s" repeatCount="indefinite" begin="0.7s"/>
+          </circle>
+          <circle cx="600" cy="160" r="8" fill="rgba(255,120,80,0.5)">
+            <animate attributeName="cy" values="60;160;160" dur="2.2s" repeatCount="indefinite" begin="0.7s"/>
+            <animate attributeName="opacity" values="1;1;0.8" dur="2.2s" repeatCount="indefinite" begin="0.7s"/>
+          </circle>
+        </g>
+        <text x="560" y="240" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="11" fill="rgba(200,146,74,0.85)">カプセルで包んで届ける</text>
+        <text x="560" y="58" text-anchor="middle" font-size="20" fill="rgba(255,200,80,0.6)">☀</text>
+
+        <!-- 凡例 -->
+        <circle cx="420" cy="252" r="6" fill="rgba(255,120,80,0.85)"/>
+        <text x="432" y="256" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="rgba(254,252,248,0.5)">UV吸収剤</text>
+        <circle cx="500" cy="252" r="10" fill="none" stroke="rgba(200,146,74,0.6)" stroke-width="1.5"/>
+        <circle cx="500" cy="252" r="5" fill="rgba(255,120,80,0.5)"/>
+        <text x="516" y="256" font-family="'Noto Sans JP',sans-serif" font-size="10" fill="rgba(254,252,248,0.5)">シラソーマ（カプセル）</text>
+      </svg>
+      <p>UV吸収剤をマイクロカプセルに封入。肌に直接触れずに紫外線をカット。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 数字 ============ -->
+<section class="numbers">
+  <div class="inner reveal">
+    <p class="eyebrow" style="text-align:center;">BY THE NUMBERS</p>
+    <h2 style="text-align:center;">3つの数字が、正直さの証明。</h2>
+    <div class="numbers-grid">
+      <div class="num-item">
+        <p class="value">50<sup>+</sup></p>
+        <p class="label">SPF / PA+++</p>
+        <p class="desc">一般的なデイリー日焼け止めのSPF30〜40を上回る防御力。それでも「乾かない」という声が圧倒的多数。</p>
+      </div>
+      <div class="num-item">
+        <p class="value">80<sub>%</sub></p>
+        <p class="label">REPEAT RATE / リピート率</p>
+        <p class="desc">発売以来、エポラーシェUVシリーズ全体のリピート率。「これ以外考えられない」という声が積み重なった結果。</p>
+      </div>
+      <div class="num-item">
+        <p class="value">129<sub>円</sub></p>
+        <p class="label">PER DAY / 1日あたり（45日使用時）</p>
+        <p class="desc">1本（30g）で約1〜1.5ヶ月。日焼け止め・下地・ライトファンデーションを1本で担います。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ストーリー ============ -->
+<section class="story">
+  <div class="story-grid">
+    <div class="story-photo reveal">
+      <img src="images/okae.jpg" alt="美容研究家 岡江美希" onerror="this.style.display='none'">
+      <p class="caption">美容研究家 岡江美希</p>
+    </div>
+    <div class="story-body reveal">
+      <p class="eyebrow">DEVELOPMENT STORY</p>
+      <h2>「毎日つける人だからこそ、<br>本当に優しいものを。」</h2>
+      <p>私が美容研究家になりたての頃、友人の結婚式で久しぶりに使った大手デパコスのUVベースメイクに、ふと違和感を覚えたんです。以前愛用していたものなのに、まるでペンキを塗ったみたい。顔がつっぱって、とっても重い！夜になったら酷い炎症まで起きてしまって。</p>
+      <blockquote class="story-quote">「毎日つけていた時は気づかなかったけど、これだけ負担のあるものをつけていたんだ。」</blockquote>
+      <p>そこからは、日々「お肌に優しいUV化粧下地」の開発に没頭しました。転機になったのは、シラソーマ製法との出会いです。紫外線吸収剤をシルク由来の成分で包み込む技術——これを使えば、肌への刺激を抑えながら高いSPF値を実現できる。「これだ！」と、興奮して眠れなかった夜を覚えています。</p>
+      <p>UVデイクリーム＆ベースが大きな反響をいただいた後、「色付きが欲しい」「肌の悩みもカバーしたい」というリクエストをたくさんいただきました。ただ色を足せばいいというものではない。カバー力と自然な艶感、どちらも諦めたくなかったので、何度も何度も試作を重ねました。</p>
+      <div class="story-box">
+        <strong>岡江美希流の使い方</strong>
+        開発当時は、カラーUV＆ベース45gとお粉だけで仕上げていました。今は肌のトーンが上がったかもしれないと感じて、カラーUV＆ベースにUVデイクリーム＆ベースを少し混ぜています。自分の肌状態に合わせてブレンドできるのも、エポラーシェUVシリーズならではの楽しみ方です。
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ UVシリーズ使い分けガイド（新セクション） ============ -->
+<section class="lineup">
+  <div class="inner-wide reveal">
+    <p class="eyebrow">UV LINE-UP</p>
+    <h2>エポラーシェUVシリーズの<br>使い分けガイド。</h2>
+    <p class="lead" style="margin-bottom:32px;">すべてシラソーマ製法。あなたの肌と使い方に合うものをお選びください。</p>
+    <div style="overflow-x:auto;">
+    <table>
+      <thead>
+        <tr>
+          <th>商品</th>
+          <th>カラー</th>
+          <th>SPF/PA</th>
+          <th>容量</th>
+          <th>こんな方に</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>UVデイクリーム＆ベース</td>
+          <td>透明（無色）</td>
+          <td>SPF45 PA++</td>
+          <td>30g</td>
+          <td>素顔・ナチュラル。首やデコルテにも使いたい方</td>
+        </tr>
+        <tr class="hl">
+          <td>カラーUV＆ベース</td>
+          <td>イエロー系ベージュ</td>
+          <td>SPF50 PA+++</td>
+          <td>30g</td>
+          <td>軽いカバーも欲しい。ファンデを卒業したい方（このページの商品）</td>
+        </tr>
+        <tr>
+          <td>カラーUV＆ベース</td>
+          <td>ピンク系ベージュ</td>
+          <td>SPF50 PA+++</td>
+          <td>45g</td>
+          <td>ピンク寄り・大容量でコスパ重視の方</td>
+        </tr>
+        <tr>
+          <td>UVデイクリームSP</td>
+          <td>透明（無色）</td>
+          <td>SPF50 PA+++</td>
+          <td>45g</td>
+          <td>全身用。外出時に顔も体も手軽にケアしたい方</td>
+        </tr>
+      </tbody>
+      <caption>▶ このページはカラーUV＆ベース 30g（イエロー系ベージュ）のご紹介です。</caption>
+    </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 使い方 ============ -->
+<section class="howto">
+  <div class="inner-wide reveal">
+    <p class="eyebrow" style="text-align:center;">HOW TO USE</p>
+    <h2 style="text-align:center;">使い方は、とてもシンプルです。</h2>
+    <div class="howto-steps">
+      <div class="step">
+        <img src="images/step-1.jpg" alt="化粧水で肌を整える" onerror="this.style.display='none'">
+        <div class="step-body">
+          <p class="step-no">01</p>
+          <h3>化粧水・美容液で整える</h3>
+          <p>いつものスキンケアを終えた後の肌に。うるおいを補ってから使うことで、より馴染みよく仕上がります。</p>
+        </div>
+      </div>
+      <div class="step">
+        <img src="images/step-2.jpg" alt="パール1粒を手に取る" onerror="this.style.display='none'">
+        <div class="step-body">
+          <p class="step-no">02</p>
+          <h3>パール1粒を手に取る</h3>
+          <p>チューブからパール1粒を手の甲に取り出します。これだけで顔全体に使える適量です。</p>
+        </div>
+      </div>
+      <div class="step">
+        <img src="images/step-3.jpg" alt="顔全体にムラなくなじませる" onerror="this.style.display='none'">
+        <div class="step-body">
+          <p class="step-no">03</p>
+          <h3>顔全体にムラなくなじませる</h3>
+          <p>指の腹を使って、顔全体にやさしくなじませます。汗をかいた後は重ね塗りするとより安心です。</p>
+        </div>
+      </div>
+    </div>
+    <div class="howto-arrange reveal">
+      <img src="images/step-blend.jpg" alt="カラーUVとUVデイクリームをブレンドする岡江流の使い方" onerror="this.style.display='none'">
+      <div class="howto-arrange-text">
+        <h3>＋ 岡江美希流アレンジ</h3>
+        <p>カラーUV＆ベースにUVデイクリーム＆ベースを少量混ぜてブレンド。色の濃さやテクスチャーを自分の肌状態に合わせて調整できます。パウダーを重ねれば、一日中きれいな素肌感が続きます。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ お客様の声 ============ -->
+<section class="voices">
+  <div class="inner-wide reveal">
+    <p class="eyebrow" style="text-align:center;">CUSTOMER VOICES</p>
+    <h2 style="text-align:center;">使い続けている方の声。</h2>
+    <div class="voice-grid">
+      <div class="voice-card">
+        <p class="vt">脱！ファンデーション</p>
+        <p class="q">これだけでファンデーションをつけたみたいな仕上がりになります。顔が軽くなるのでやめられません！</p>
+        <p class="meta">naochiさん・50代・女性・乾性肌（公式サイトレビューより）</p>
+      </div>
+      <div class="voice-card">
+        <p class="vt">これ以外考えられないでしょ</p>
+        <p class="q">もうこちらのカラーUVを使って10年くらいでしょうか。大人になった娘も愛用するようになり、母娘でごきげんに使わせていただいています。</p>
+        <p class="meta">はーちゃんさん・50代・女性・普通肌（公式サイトレビューより・一部抜粋）</p>
+      </div>
+      <div class="voice-card">
+        <p class="vt">一石二鳥でとても助かります</p>
+        <p class="q">日焼け止めとベースを別々にやってきましたが、これは1本で済むので助かっています。お粉で仕上げるだけで十分な素肌感に。</p>
+        <p class="meta">まきこさん・50代・女性・乾性肌（公式サイトレビューより・一部抜粋）</p>
+      </div>
+    </div>
+    <p class="disclaimer" style="font-size:12px;color:var(--mist);text-align:center;margin-top:20px;">※いずれも個人の感想です。</p>
+    <div class="trust-pills">
+      <div class="trust-pill">
+        <p class="t1">SPF 50 / PA+++</p>
+        <p class="t2">無添加処方で<br>高いUV防御力を実現</p>
+      </div>
+      <div class="trust-pill">
+        <p class="t1">CYRASOME</p>
+        <p class="t2">シラソーマ製法<br>乾燥しにくい独自技術</p>
+      </div>
+      <div class="trust-pill">
+        <p class="t1">★ 4.9</p>
+        <p class="t2">28件のレビューで<br>4.9 / 5.0の評価</p>
+      </div>
+    </div>
+    <div class="mid-cta">
+      <a class="btn btn-sun" href="#trial">まずはトライアルセット（990円・送料無料）から</a>
+      <p class="microcopy">ポストに届くので受け取りの手間もありません。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ コスパ ============ -->
+<section class="costs">
+  <div class="inner reveal">
+    <p class="eyebrow">EVERY DAY</p>
+    <h2>1日あたり、缶コーヒー1本より小さく。</h2>
+    <p class="costs-big">129<span>円 / 日</span></p>
+    <p>1本で日焼け止め・化粧下地・ライトファンデーションの役割を担います。「1本でいい」というシンプルさが、毎日続く理由のひとつです。</p>
+  </div>
+</section>
+
+<!-- ============ 成分・スペック ============ -->
+<section style="background:var(--white);">
+  <div class="inner reveal">
+    <p class="eyebrow">INGREDIENTS &amp; SPEC</p>
+    <h2>成分とスペック。</h2>
+    <table class="spec-table">
+      <tr><th>商品名</th><td>カラーUV＆ベース 30g</td></tr>
+      <tr><th>カラー</th><td>イエロー系ベージュ</td></tr>
+      <tr><th>SPF・PA値</th><td>SPF50 PA+++</td></tr>
+      <tr><th>内容量</th><td>30g（使用目安：約1〜1.5ヶ月）</td></tr>
+      <tr><th>原産国</th><td>日本</td></tr>
+      <tr><th>無添加</th><td>無香料（合成香料不使用）・無鉱物油・タール系色素不使用</td></tr>
+    </table>
+    <p class="spec-caption" style="margin-top:24px;"><strong>全成分</strong><br>水、シクロペンタシロキサン、グリセリン、タルク、エチルヘキサン酸セチル、酸化チタン、BG、メトキシケイヒ酸エチルヘキシル、メタクリル酸メチルクロスポリマー、イソステアリン酸ソルビタン、セスキオレイン酸ソルビタン、PEG-10ジメチコン、ラウリルPEG-9ポリジメチルシロキシエチルジメチコン、ハネセンナ葉エキス、加水分解酵母エキス、ザクロ果実エキス、ナギイカダ根エキス、ウワウルシ葉エキス、トウキンセンカ花エキス、セイヨウトチノキ種子エキス、ツボクサエキス、エチドロン酸、シラン根エキス、ローヤルゼリーエキス、ヒアルロン酸Na、グリチルリチン酸アンモニウム、グリチルレチン酸ステアリル、トコフェロール、t-ブチルメトキシジベンゾイルメタン、ポリシリコーン-14、ラウリン酸ポリグリセリル-10、酸化亜鉛、ジステアルジモニウムヘクトライト、エチルヘキシルグリセリン、カプリル酸グリセリル、ペンチレングリコール、ハイドロゲンジメチコン、酸化鉄、炭酸プロピレン、ジメチコン、シリカ、水酸化Al、硫酸Mg、(ベヘン酸/エイコサン二酸)グリセリル、エタノール、BHT</p>
+    <p class="spec-caption">【使用上の注意】お肌に異常が生じていないかよく注意して使用してください。お肌に合わないときは、ご使用をおやめください。</p>
+  </div>
+</section>
+
+<!-- ============ 正直に言うと ============ -->
+<section class="fitcheck">
+  <div class="inner reveal">
+    <p class="eyebrow">HONESTLY</p>
+    <h2>正直に言うと、<br>向いていない方もいます。</h2>
+    <div class="fit-grid">
+      <div class="fit-col fit-no">
+        <h3>おすすめしない方</h3>
+        <ul>
+          <li>しっかりカバーしたい方（ライトカバーです。厚みのある仕上がりをご希望の場合はファンデーションとの併用をおすすめします）</li>
+          <li>ツヤをしっかり出したい方（ナチュラルな艶感で、ハイライト効果はありません）</li>
+          <li>30gでは容量が足りない方（大容量の45gピンク系ベージュもご用意しています）</li>
+        </ul>
+      </div>
+      <div class="fit-col fit-yes">
+        <h3>ぜひ試してほしい方</h3>
+        <ul>
+          <li>日焼け止めのベタつき・乾燥感が気になる方</li>
+          <li>「ファンデを塗ると肌が重い」と感じている方</li>
+          <li>無添加処方で、敏感肌でも安心して使いたい方</li>
+        </ul>
+      </div>
+    </div>
+    <p class="fit-note">合わないものを売りたくないので、先にお伝えしました。</p>
+  </div>
+</section>
+
+<!-- ============ Q&A ============ -->
+<section class="faq">
+  <div class="inner reveal">
+    <p class="eyebrow">Q&amp;A</p>
+    <h2>よくいただくご質問。</h2>
+    <details>
+      <summary>「色付き」とありますが、どんな方の肌でも合いますか？</summary>
+      <p class="a">天然鉱石で色づけしたイエロー系ベージュは、肌色を選ばず自然に馴染む配合を追求しています。ただし、肌色が非常に白い方や色黒の方には、テクスチャーの出方が異なる場合があります。心配な方はまずトライアルセット（990円）でお試しください。</p>
+    </details>
+    <details>
+      <summary>ファンデーションなしで使えますか？</summary>
+      <p class="a">「ファンデーションなしで出かけられるようになった」というお声を多くいただいています。+パウダーをはたくだけでナチュラルな素肌感に仕上がります。仕上がりには個人差がありますので、まずお試しください。</p>
+    </details>
+    <details>
+      <summary>敏感肌ですが使えますか？</summary>
+      <p class="a">無香料（合成香料不使用）・無鉱物油・タール系色素不使用の無添加処方です。「肌が弱いですがこれは大丈夫です」というお声もいただいていますが、肌質には個人差がありますので、まずパッチテストをされることをおすすめします。</p>
+    </details>
+    <details>
+      <summary>30gと45gはどちらがいいですか？</summary>
+      <p class="a">30g（イエロー系ベージュ）は初めての方や使用量が少なめの方向け。45g（ピンク系ベージュ）はカラーが異なり、大容量でコスパ重視の方向けです。まずは30gでお試しいただくのがおすすめです。</p>
+    </details>
+    <details>
+      <summary>定期便はありますか？</summary>
+      <p class="a">はい。単品での定期便は5%OFF（5,539円税込）。3品以上のまとめ定期なら最大20%OFFになります（3回以上の継続が条件です）。まずは1本お試しいただき、「続けたい」と思えたときにご検討ください。</p>
+    </details>
+  </div>
+</section>
+
+<!-- ============ トライアル ============ -->
+<section class="trial" id="trial">
+  <div class="inner reveal">
+    <p class="eyebrow" style="text-align:center;">FOR FIRST-TIMERS</p>
+    <h2 style="text-align:center;">いきなり1本は不安、という方へ。</h2>
+    <div class="trial-box">
+      <p class="trial-lead">エポラーシェ トライアルセット（990円）があります。</p>
+      <p class="trial-detail">クレンジングから化粧水・美容液・UVクリームまで9種類がセットに。カラーUV＆ベース（0.5g×3包）も含まれています。<strong>税込990円・送料無料</strong>（ネコポス便・ポスト投函）。まず肌との相性を確かめてから、本品をご検討ください。</p>
+      <blockquote class="trial-voice">「サンプルの量に驚きました。こんなに入っていて、この価格で良いんだ！一つ一つ何日か試すことができて、とても満足です。」<span>るなさん・30代・女性（公式サイトレビューより・一部抜粋）</span></blockquote>
+      <a class="btn btn-sun" href="https://www.triplesun.co.jp/shop/products/ec_573">トライアルセットを試してみる（990円）</a>
+    </div>
+    <p class="trial-note">※ネコポス便（ポスト投函）のため、お届け日時の指定はできません。<br>※おひとり様1点限りのご注文です。</p>
+  </div>
+</section>
+
+<!-- ============ 購入 ============ -->
+<section class="order" id="order">
+  <div class="inner reveal">
+    <p class="eyebrow" style="text-align:center;">ORDER</p>
+    <h2 style="text-align:center;">まずは、ひとつから。</h2>
+    <div class="order-single">
+      <div class="order-card">
+        <p class="plan">単品購入</p>
+        <p class="price">5,830<small>円（税込）</small></p>
+        <p class="per">30g・使用目安 約1〜1.5ヶ月／1日あたり約129〜194円</p>
+        <a class="btn btn-sun" href="https://www.triplesun.co.jp/shop/products/ec_549_single">カラーUV＆ベースをご注文する</a>
+      </div>
+    </div>
+    <div class="teiki-info">
+      <p class="t-head">続けるほど、お得に。</p>
+      <p>気に入って続けたくなったら、定期便がおすすめです。<strong>3品以上のまとめ定期なら最大20%OFF</strong>（3回以上の継続が条件です）。まずは1本お試しいただいて、「これは続けたい」と思えたらで大丈夫。無理におすすめすることはありません。</p>
+      <a class="teiki-link" href="https://www.triplesun.co.jp/shop/pages/regular2" target="_blank" rel="noopener">定期便サービスのしくみを見る →</a>
+    </div>
+    <p class="tel">
+      お電話でのご注文・ご相談（フリーコール）<br>
+      <a href="tel:0120561115"><span class="num">0120-56-1115</span></a>
+      平日 10:00〜14:00 ／ 15:00〜18:30（土日祝休み）
+    </p>
+  </div>
+</section>
+
+<!-- ============ 最終メッセージ ============ -->
+<section class="final">
+  <img class="final-bg" src="images/final.jpg" alt="朝の窓辺で穏やかに外を眺める女性" onerror="this.style.display='none'">
+  <div class="final-overlay"></div>
+  <div class="inner reveal">
+    <p class="msg">今日の肌を、<br>ちゃんと守れている実感が<br><em>あるといいと思って、作りました。</em></p>
+    <a class="btn btn-sun" href="https://www.triplesun.co.jp/shop/products/ec_549_single">カラーUV＆ベースをはじめる</a>
+  </div>
+</section>
+
+<!-- ============ 直営店案内 ============ -->
+<section class="shop-info">
+  <div class="inner reveal">
+    <p class="eyebrow" style="text-align:center;">SHOP</p>
+    <h2 style="text-align:center;">直営店舗で、試してみることができます。</h2>
+    <p class="shop-lead">実際に肌に乗せてみるのがいちばん早い。直営店舗ではスタッフがあなたの肌に合う使い方もご案内します。</p>
+    <div style="text-align:center;">
+      <a class="btn btn-outline" href="https://333esthe.com/course/shoplist/">店舗のご案内を見る</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  エポラーシェ（EPORASHE）／ 株式会社トリプルサン<br>
+  〒160-0023 東京都新宿区四谷本塩町15-12 カーサ四谷羽毛田ビル2F<br>
+  フリーコール <a href="tel:0120561115">0120-56-1115</a>（平日 10:00〜14:00／15:00〜18:30）
+</footer>
+
+<!-- 追従CTA -->
+<div class="sticky-cta" id="stickyCta">
+  <a href="#trial">まずはトライアルセット <strong>990円</strong>（送料無料）</a>
+</div>
+
+<script>
+(function(){
+  try{
+    var els=document.querySelectorAll('.reveal');
+    if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('on');});}
+    else{
+      var io=new IntersectionObserver(function(entries){
+        entries.forEach(function(en){
+          if(en.isIntersecting){en.target.classList.add('on');io.unobserve(en.target);}
+        });
+      },{threshold:0.1});
+      els.forEach(function(e){io.observe(e);});
+    }
+  }catch(e){}
+  try{
+    var sticky=document.getElementById('stickyCta');
+    var shown=false;
+    window.addEventListener('scroll',function(){
+      var y=window.scrollY||window.pageYOffset;
+      var nb=(window.innerHeight+y)>=(document.body.scrollHeight-600);
+      var show=y>600&&!nb;
+      if(show!==shown){shown=show;sticky.classList.toggle('show',show);}
+    },{passive:true});
+  }catch(e){}
+})();
+</script>
+</body>
+</html>
