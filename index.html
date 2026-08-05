@@ -676,6 +676,65 @@ footer a{color:rgba(254,252,248,.4);text-decoration:none;}
 .reveal{opacity:0;transform:translateY(20px);transition:opacity .75s ease,transform .75s ease;}
 .reveal.on{opacity:1;transform:none;}
 
+/* ======== 購入プラン並列 ======== */
+.order-plans{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:20px;}
+.order-plan{padding:18px 16px;border:1px solid var(--sand-deep);text-align:center;}
+.order-plan-teiki{border:2px solid var(--sun);background:var(--sun-pale);}
+.plan-label{font-size:11px;letter-spacing:.3em;color:var(--mist);margin-bottom:6px;font-weight:500;}
+.plan-label-teiki{color:var(--sun);}
+.plan-badge{display:inline-block;background:var(--sun);color:#fff;font-size:10px;letter-spacing:.1em;padding:2px 7px;margin-left:4px;vertical-align:middle;}
+.plan-price{font-family:'Cormorant Garamond',serif;font-size:clamp(22px,3vw,28px);font-weight:500;color:var(--charcoal);line-height:1.2;}
+.plan-price-teiki{color:var(--sun);}
+.plan-price small{font-family:'Noto Sans JP',sans-serif;font-size:12px;font-weight:400;}
+.plan-note{font-size:11px;color:var(--mist);margin-top:5px;line-height:1.6;}
+.order-delivery{margin-top:18px;padding:14px 16px;background:var(--base);border:1px solid var(--sand);font-size:12.5px;color:var(--mist);line-height:2;text-align:left;}
+.order-delivery p{margin:0;}
+
+/* ======== レビューグラフ ======== */
+.review-graph{max-width:480px;margin:0 auto 44px;background:var(--white);padding:28px 32px;}
+.rg-head{display:flex;align-items:center;gap:14px;margin-bottom:20px;}
+.rg-score{font-family:'Cormorant Garamond',serif;font-size:48px;font-weight:500;color:var(--charcoal);line-height:1;}
+.rg-stars{color:var(--sun);font-size:16px;letter-spacing:2px;}
+.rg-count{font-size:12px;color:var(--mist);}
+.rg-bars{display:flex;flex-direction:column;gap:8px;}
+.rg-row{display:flex;align-items:center;gap:10px;}
+.rg-lbl{font-size:12px;color:var(--mist);width:22px;text-align:right;flex-shrink:0;}
+.rg-bar-wrap{flex:1;height:8px;background:var(--sand);border-radius:4px;overflow:hidden;}
+.rg-bar{height:100%;background:var(--sun);border-radius:4px;}
+.rg-bar-4{background:var(--sand-deep);}
+.rg-n{font-size:11px;color:var(--mist);width:26px;flex-shrink:0;}
+
+/* ======== トップに戻る ======== */
+.back-to-top{
+  position:fixed;right:20px;bottom:80px;z-index:100;
+  width:48px;height:48px;border-radius:50%;
+  background:var(--charcoal);color:var(--base);
+  border:none;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  font-size:18px;
+  opacity:0;transform:translateY(10px);
+  transition:opacity .3s ease,transform .3s ease;
+  box-shadow:0 2px 12px rgba(40,36,32,.25);
+}
+.back-to-top.show{opacity:1;transform:none;}
+.back-to-top:hover{background:var(--sun);}
+
+/* ======== セクション内CTA ======== */
+.section-cta{
+  margin-top:44px;text-align:center;
+}
+.section-cta a{
+  display:inline-block;
+  font-family:'Shippori Mincho',serif;
+  font-size:14px;letter-spacing:.22em;
+  color:var(--sun);text-decoration:none;
+  border-bottom:1px solid var(--sun);
+  padding-bottom:3px;
+  transition:color .2s,border-color .2s;
+}
+.section-cta a:hover{color:var(--charcoal);border-color:var(--charcoal);}
+.section-cta .arrow{margin-left:8px;font-size:12px;}
+
 /* ======== レスポンシブ ======== */
 @media (max-width:860px){
   section{padding:76px 0;}
@@ -775,6 +834,7 @@ footer a{color:rgba(254,252,248,.4);text-decoration:none;}
         <li>敏感肌だから、成分が気になって選べない</li>
       </ul>
       <p class="empathy-close">ひとつでも頷いたなら、<br>このページはあなたのために書きました。</p>
+      <div class="section-cta"><a href="#order">このページの下でご購入いただけます<span class="arrow">↓</span></a></div>
     </div>
     <div class="empathy-img-wrap reveal">
       <img src="images/empathy.jpg" alt="頬にそっと手をあて肌を確かめる女性" onerror="this.style.display='none'">
@@ -958,7 +1018,7 @@ footer a{color:rgba(254,252,248,.4);text-decoration:none;}
         <p class="desc">1本（30g）で約1〜1.5ヶ月。日焼け止め・下地・ライトファンデーションを1本で担います。</p>
       </div>
     </div>
-  </div>
+    <div class="section-cta" style="margin-top:52px;"><a href="#order">カラーUV＆ベースをご注文する<span class="arrow">→</span></a></div>
 </section>
 
 <!-- ============ ストーリー ============ -->
@@ -1100,6 +1160,22 @@ footer a{color:rgba(254,252,248,.4);text-decoration:none;}
       </div>
     </div>
     <p class="disclaimer" style="font-size:12px;color:var(--mist);text-align:center;margin-top:20px;">※いずれも個人の感想です。</p>
+    <!-- レビュー内訳 -->
+    <div class="review-graph reveal">
+      <div class="rg-head">
+        <span class="rg-score">4.9</span>
+        <span class="rg-stars">★★★★★</span>
+        <span class="rg-count">28件のレビュー</span>
+      </div>
+      <div class="rg-bars">
+        <div class="rg-row"><span class="rg-lbl">★5</span><div class="rg-bar-wrap"><div class="rg-bar" style="width:85.7%"></div></div><span class="rg-n">24件</span></div>
+        <div class="rg-row"><span class="rg-lbl">★4</span><div class="rg-bar-wrap"><div class="rg-bar rg-bar-4" style="width:14.3%"></div></div><span class="rg-n">4件</span></div>
+        <div class="rg-row"><span class="rg-lbl">★3</span><div class="rg-bar-wrap"><div class="rg-bar rg-bar-low" style="width:0%"></div></div><span class="rg-n">0件</span></div>
+        <div class="rg-row"><span class="rg-lbl">★2</span><div class="rg-bar-wrap"><div class="rg-bar rg-bar-low" style="width:0%"></div></div><span class="rg-n">0件</span></div>
+        <div class="rg-row"><span class="rg-lbl">★1</span><div class="rg-bar-wrap"><div class="rg-bar rg-bar-low" style="width:0%"></div></div><span class="rg-n">0件</span></div>
+      </div>
+    </div>
+
     <div class="trust-pills">
       <div class="trust-pill">
         <p class="t1">SPF 50 / PA+++</p>
@@ -1175,6 +1251,7 @@ footer a{color:rgba(254,252,248,.4);text-decoration:none;}
       </div>
     </div>
     <p class="fit-note">合わないものを売りたくないので、先にお伝えしました。</p>
+    <div class="section-cta" style="margin-top:36px;"><a href="#trial">まずトライアルセット（990円）で試してみる<span class="arrow">→</span></a></div>
   </div>
 </section>
 
@@ -1203,7 +1280,8 @@ footer a{color:rgba(254,252,248,.4);text-decoration:none;}
       <summary>定期便はありますか？</summary>
       <p class="a">はい。単品での定期便は5%OFF（5,539円税込）。3品以上のまとめ定期なら最大20%OFFになります（3回以上の継続が条件です）。まずは1本お試しいただき、「続けたい」と思えたときにご検討ください。</p>
     </details>
-  </div>
+    <div class="section-cta" style="margin-top:44px;"><a href="#order">カラーUV＆ベースをご注文する<span class="arrow">→</span></a></div>
+</div>
 </section>
 
 <!-- ============ トライアル ============ -->
@@ -1243,10 +1321,26 @@ footer a{color:rgba(254,252,248,.4);text-decoration:none;}
       </div>
       <div class="order-card-col">
         <div class="order-card">
-          <p class="plan">単品購入</p>
-          <p class="price">5,830<small>円（税込）</small></p>
-          <p class="per">30g・使用目安 約1〜1.5ヶ月／1日あたり約129〜194円</p>
-          <a class="btn btn-sun" href="https://www.triplesun.co.jp/shop/products/ec_549_single">カラーUV＆ベースをご注文する</a>
+          <!-- 価格2プラン並列 -->
+          <div class="order-plans">
+            <div class="order-plan order-plan-regular">
+              <p class="plan-label">通常購入</p>
+              <p class="plan-price">5,830<small>円（税込）</small></p>
+              <p class="plan-note">縛りなし・いつでも1本から</p>
+            </div>
+            <div class="order-plan order-plan-teiki">
+              <p class="plan-label plan-label-teiki">定期購入 <span class="plan-badge">5%OFF</span></p>
+              <p class="plan-price plan-price-teiki">5,539<small>円（税込）</small></p>
+              <p class="plan-note">3回継続後いつでも解約可</p>
+            </div>
+          </div>
+          <a class="btn btn-sun" style="width:100%;display:block;margin-top:4px;" href="https://www.triplesun.co.jp/shop/products/ec_549_single">カラーUV＆ベースをご注文する</a>
+          <!-- 送料・配送 -->
+          <div class="order-delivery">
+            <p>📦 送料：全国一律550円（税込）</p>
+            <p>🚚 ご注文後2〜5営業日以内に発送</p>
+            <p>↩ 未開封品は到着後8日以内に返品対応</p>
+          </div>
         </div>
       </div>
     </div>
@@ -1285,6 +1379,9 @@ footer a{color:rgba(254,252,248,.4);text-decoration:none;}
   </div>
 </section>
 
+<!-- トップに戻る -->
+<button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="ページトップへ戻る">↑</button>
+
 <footer>
   エポラーシェ（EPORASHE）／ 株式会社トリプルサン<br>
   〒160-0023 東京都新宿区四谷本塩町15-12 カーサ四谷羽毛田ビル2F<br>
@@ -1308,6 +1405,15 @@ footer a{color:rgba(254,252,248,.4);text-decoration:none;}
         });
       },{threshold:0.1});
       els.forEach(function(e){io.observe(e);});
+    }
+  }catch(e){}
+  try{
+    var topBtn=document.getElementById('backToTop');
+    if(topBtn){
+      window.addEventListener('scroll',function(){
+        var y=window.scrollY||window.pageYOffset;
+        topBtn.classList.toggle('show',y>100);
+      },{passive:true});
     }
   }catch(e){}
   try{
