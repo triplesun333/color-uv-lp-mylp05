@@ -905,103 +905,140 @@ footer a{color:rgba(254,252,248,.4);text-decoration:none;}
     <p class="lead">一般的な日焼け止めは、紫外線カット成分が直接肌に触れます。だから乾く。崩れる。シラソーマ製法は、その問題を製法から解決しました。</p>
 
     <!-- シラソーマ2カラム説明 -->
-    <div class="method-cards">
-      <div class="method-card method-card-bad">
-        <div class="method-card-label">一般的な日焼け止め</div>
-        <div class="method-anim-wrap" id="animBad">
-          <svg viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg" width="100%" style="max-width:200px;display:block;margin:0 auto;">
-            <text x="100" y="22" text-anchor="middle" font-size="18" fill="rgba(255,200,80,0.7)">☀</text>
-            <line x1="60" y1="28" x2="50" y2="60" stroke="rgba(255,200,80,0.3)" stroke-width="1" stroke-dasharray="3,3"/>
-            <line x1="100" y1="28" x2="100" y2="60" stroke="rgba(255,200,80,0.3)" stroke-width="1" stroke-dasharray="3,3"/>
-            <line x1="140" y1="28" x2="150" y2="60" stroke="rgba(255,200,80,0.3)" stroke-width="1" stroke-dasharray="3,3"/>
-            <!-- 落下粒子 -->
-            <circle r="9" fill="#E8704A" opacity="0.9">
-              <animateMotion dur="1.8s" repeatCount="indefinite" begin="0s">
-                <mpath href="#pathBad1"/>
-              </animateMotion>
-            </circle>
-            <path id="pathBad1" d="M 50,55 L 50,118" fill="none"/>
-            <circle r="9" fill="#E8704A" opacity="0.9">
-              <animateMotion dur="1.8s" repeatCount="indefinite" begin="0.4s">
-                <mpath href="#pathBad2"/>
-              </animateMotion>
-            </circle>
-            <path id="pathBad2" d="M 100,55 L 100,118" fill="none"/>
-            <circle r="9" fill="#E8704A" opacity="0.9">
-              <animateMotion dur="1.8s" repeatCount="indefinite" begin="0.8s">
-                <mpath href="#pathBad3"/>
-              </animateMotion>
-            </circle>
-            <path id="pathBad3" d="M 150,55 L 150,118" fill="none"/>
-            <!-- 肌層 -->
-            <rect x="10" y="120" width="180" height="32" fill="rgba(200,146,74,0.22)" rx="3"/>
-            <text x="100" y="140" text-anchor="middle" font-family="sans-serif" font-size="11" fill="rgba(200,146,74,0.8)">肌</text>
-            <!-- バツ印 -->
-            <text x="100" y="105" text-anchor="middle" font-size="16" fill="rgba(232,112,74,0.7)">✕</text>
-          </svg>
-        </div>
-        <p class="method-card-desc">UV吸収剤が<strong>直接肌に触れる</strong><br>→ 乾燥・重さ・負担の原因に</p>
-      </div>
+    <div class="capsule-demo-wrap">
+      <svg viewBox="0 0 760 400" xmlns="http://www.w3.org/2000/svg" style="max-width:760px;width:100%;display:block;margin:0 auto;">
 
-      <div class="method-card-arrow">→</div>
+        <!-- 背景パネル -->
+        <rect x="0" y="0" width="348" height="400" fill="rgba(255,255,255,0.04)" rx="2"/>
+        <rect x="412" y="0" width="348" height="400" fill="rgba(200,146,74,0.1)" rx="2"/>
 
-      <div class="method-card method-card-good">
-        <div class="method-card-label">シラソーマ製法</div>
-        <div class="method-anim-wrap">
-          <svg viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg" width="100%" style="max-width:200px;display:block;margin:0 auto;">
-            <text x="100" y="22" text-anchor="middle" font-size="18" fill="rgba(255,200,80,0.7)">☀</text>
-            <line x1="60" y1="28" x2="50" y2="60" stroke="rgba(255,200,80,0.3)" stroke-width="1" stroke-dasharray="3,3"/>
-            <line x1="100" y1="28" x2="100" y2="60" stroke="rgba(255,200,80,0.3)" stroke-width="1" stroke-dasharray="3,3"/>
-            <line x1="140" y1="28" x2="150" y2="60" stroke="rgba(255,200,80,0.3)" stroke-width="1" stroke-dasharray="3,3"/>
-            <!-- カプセル粒子 -->
-            <g>
-              <circle r="14" fill="none" stroke="rgba(200,146,74,0.7)" stroke-width="1.5" opacity="0.9">
-                <animateMotion dur="2s" repeatCount="indefinite" begin="0s">
-                  <mpath href="#pathGood1"/>
-                </animateMotion>
-              </circle>
-              <circle r="7" fill="rgba(200,146,74,0.4)" opacity="0.9">
-                <animateMotion dur="2s" repeatCount="indefinite" begin="0s">
-                  <mpath href="#pathGood1"/>
-                </animateMotion>
-              </circle>
-            </g>
-            <path id="pathGood1" d="M 50,55 L 50,108" fill="none"/>
-            <g>
-              <circle r="14" fill="none" stroke="rgba(200,146,74,0.7)" stroke-width="1.5" opacity="0.9">
-                <animateMotion dur="2s" repeatCount="indefinite" begin="0.45s">
-                  <mpath href="#pathGood2"/>
-                </animateMotion>
-              </circle>
-              <circle r="7" fill="rgba(200,146,74,0.4)" opacity="0.9">
-                <animateMotion dur="2s" repeatCount="indefinite" begin="0.45s">
-                  <mpath href="#pathGood2"/>
-                </animateMotion>
-              </circle>
-            </g>
-            <path id="pathGood2" d="M 100,55 L 100,108" fill="none"/>
-            <g>
-              <circle r="14" fill="none" stroke="rgba(200,146,74,0.7)" stroke-width="1.5" opacity="0.9">
-                <animateMotion dur="2s" repeatCount="indefinite" begin="0.9s">
-                  <mpath href="#pathGood3"/>
-                </animateMotion>
-              </circle>
-              <circle r="7" fill="rgba(200,146,74,0.4)" opacity="0.9">
-                <animateMotion dur="2s" repeatCount="indefinite" begin="0.9s">
-                  <mpath href="#pathGood3"/>
-                </animateMotion>
-              </circle>
-            </g>
-            <path id="pathGood3" d="M 150,55 L 150,108" fill="none"/>
-            <!-- 肌層 -->
-            <rect x="10" y="120" width="180" height="32" fill="rgba(200,146,74,0.22)" rx="3"/>
-            <text x="100" y="140" text-anchor="middle" font-family="sans-serif" font-size="11" fill="rgba(200,146,74,0.8)">肌</text>
-            <!-- チェック -->
-            <text x="100" y="113" text-anchor="middle" font-size="14" fill="rgba(200,146,74,0.9)">○</text>
-          </svg>
-        </div>
-        <p class="method-card-desc">UV成分を<strong>カプセルに封入</strong>して届ける<br>→ 肌に直接触れずにUVカット</p>
-      </div>
+        <!-- パネルラベル（最上部・粒子と重ならない位置） -->
+        <text x="174" y="22" text-anchor="middle" font-family="sans-serif" font-size="11" fill="rgba(254,252,248,0.4)" letter-spacing="3">一般的な日焼け止め</text>
+        <text x="586" y="22" text-anchor="middle" font-family="sans-serif" font-size="11" fill="rgba(200,146,74,0.65)" letter-spacing="3">シラソーマ製法</text>
+
+        <!-- 中央矢印 -->
+        <text x="380" y="208" text-anchor="middle" font-size="22" fill="rgba(200,146,74,0.4)">→</text>
+
+        <!-- 太陽 -->
+        <text x="174" y="58" text-anchor="middle" font-size="20" fill="rgba(255,220,80,0.75)">☀</text>
+        <text x="586" y="58" text-anchor="middle" font-size="20" fill="rgba(255,220,80,0.75)">☀</text>
+
+        <!-- UV光線（点線・背景） -->
+        <g>
+          <line x1="134" y1="64" x2="80"  y2="195" stroke="rgba(255,220,80,0.3)" stroke-width="1" stroke-dasharray="4,3"><animate attributeName="opacity" values="0.8;0.2;0.8" dur="2s" repeatCount="indefinite" begin="0s"/></line>
+          <line x1="174" y1="66" x2="174" y2="195" stroke="rgba(255,220,80,0.3)" stroke-width="1" stroke-dasharray="4,3"><animate attributeName="opacity" values="0.8;0.2;0.8" dur="2s" repeatCount="indefinite" begin="0.3s"/></line>
+          <line x1="214" y1="64" x2="268" y2="195" stroke="rgba(255,220,80,0.3)" stroke-width="1" stroke-dasharray="4,3"><animate attributeName="opacity" values="0.8;0.2;0.8" dur="2s" repeatCount="indefinite" begin="0.6s"/></line>
+        </g>
+        <g>
+          <line x1="546" y1="64" x2="492" y2="195" stroke="rgba(255,220,80,0.3)" stroke-width="1" stroke-dasharray="4,3"><animate attributeName="opacity" values="0.8;0.2;0.8" dur="2s" repeatCount="indefinite" begin="0.15s"/></line>
+          <line x1="586" y1="66" x2="586" y2="195" stroke="rgba(255,220,80,0.3)" stroke-width="1" stroke-dasharray="4,3"><animate attributeName="opacity" values="0.8;0.2;0.8" dur="2s" repeatCount="indefinite" begin="0.45s"/></line>
+          <line x1="626" y1="64" x2="680" y2="195" stroke="rgba(255,220,80,0.3)" stroke-width="1" stroke-dasharray="4,3"><animate attributeName="opacity" values="0.8;0.2;0.8" dur="2s" repeatCount="indefinite" begin="0.75s"/></line>
+        </g>
+
+        <!-- ===== 肌の断面 ===== -->
+        <rect x="16"  y="240" width="316" height="44" fill="rgba(200,146,74,0.18)" rx="3"/>
+        <text x="174" y="268" text-anchor="middle" font-family="sans-serif" font-size="12" fill="rgba(200,146,74,0.75)">肌</text>
+        <line x1="16"  y1="252" x2="332" y2="252" stroke="rgba(200,146,74,0.1)" stroke-width="1"/>
+        <line x1="16"  y1="265" x2="332" y2="265" stroke="rgba(200,146,74,0.1)" stroke-width="1"/>
+
+        <rect x="428" y="240" width="316" height="44" fill="rgba(200,146,74,0.18)" rx="3"/>
+        <text x="586" y="268" text-anchor="middle" font-family="sans-serif" font-size="12" fill="rgba(200,146,74,0.75)">肌</text>
+        <line x1="428" y1="252" x2="744" y2="252" stroke="rgba(200,146,74,0.1)" stroke-width="1"/>
+        <line x1="428" y1="265" x2="744" y2="265" stroke="rgba(200,146,74,0.1)" stroke-width="1"/>
+
+        <!-- ===== 左：UV吸収剤が肌に直接接触（静止） ===== -->
+        <circle cx="52"  cy="229" r="11" fill="rgba(232,112,74,0.9)"/>
+        <circle cx="86"  cy="232" r="10" fill="rgba(232,112,74,0.85)"/>
+        <circle cx="120" cy="228" r="12" fill="rgba(232,112,74,0.9)"/>
+        <circle cx="155" cy="231" r="10" fill="rgba(232,112,74,0.85)"/>
+        <circle cx="190" cy="228" r="11" fill="rgba(232,112,74,0.9)"/>
+        <circle cx="224" cy="232" r="10" fill="rgba(232,112,74,0.85)"/>
+        <circle cx="258" cy="229" r="11" fill="rgba(232,112,74,0.9)"/>
+        <circle cx="292" cy="231" r="10" fill="rgba(232,112,74,0.85)"/>
+
+        <!-- 左ラベル：粒子の上に余白をとる（y=210） -->
+        <text x="174" y="210" text-anchor="middle" font-family="sans-serif" font-size="12" fill="rgba(232,112,74,0.85)">✕ 吸収剤が直接肌に触れる</text>
+
+        <!-- ===== 右：カプセルが肌の上に乗っている（静止） ===== -->
+        <circle cx="468" cy="222" r="18" fill="rgba(200,146,74,0.15)" stroke="rgba(200,146,74,0.7)" stroke-width="2"/>
+        <circle cx="468" cy="222" r="9"  fill="rgba(232,112,74,0.55)"/>
+
+        <circle cx="516" cy="220" r="18" fill="rgba(200,146,74,0.15)" stroke="rgba(200,146,74,0.7)" stroke-width="2"/>
+        <circle cx="516" cy="220" r="9"  fill="rgba(232,112,74,0.55)"/>
+
+        <circle cx="564" cy="221" r="19" fill="rgba(200,146,74,0.15)" stroke="rgba(200,146,74,0.7)" stroke-width="2"/>
+        <circle cx="564" cy="221" r="9"  fill="rgba(232,112,74,0.55)"/>
+
+        <circle cx="614" cy="220" r="18" fill="rgba(200,146,74,0.15)" stroke="rgba(200,146,74,0.7)" stroke-width="2"/>
+        <circle cx="614" cy="220" r="9"  fill="rgba(232,112,74,0.55)"/>
+
+        <circle cx="662" cy="221" r="18" fill="rgba(200,146,74,0.15)" stroke="rgba(200,146,74,0.7)" stroke-width="2"/>
+        <circle cx="662" cy="221" r="9"  fill="rgba(232,112,74,0.55)"/>
+
+        <circle cx="710" cy="222" r="17" fill="rgba(200,146,74,0.15)" stroke="rgba(200,146,74,0.7)" stroke-width="2"/>
+        <circle cx="710" cy="222" r="8"  fill="rgba(232,112,74,0.55)"/>
+
+        <!-- カプセルと肌の間の点線（隙間を示す） -->
+        <line x1="428" y1="240" x2="744" y2="240" stroke="rgba(200,146,74,0.25)" stroke-width="1" stroke-dasharray="3,3"/>
+
+        <!-- 右ラベル：カプセルの上に余白をとる（y=198） -->
+        <text x="586" y="198" text-anchor="middle" font-family="sans-serif" font-size="12" fill="rgba(200,146,74,0.9)">○ カプセルが肌への接触を防ぐ</text>
+
+        <!-- ===== UV粒子アニメーション（降ってくる） ===== -->
+        <!-- 左：肌の粒子まで到達 -->
+        <circle r="4" fill="rgba(255,230,50,0.9)">
+          <animateMotion dur="1.6s" repeatCount="indefinite" begin="0s"><mpath href="#pL1"/></animateMotion>
+          <animate attributeName="opacity" values="1;1;0" dur="1.6s" repeatCount="indefinite" begin="0s"/>
+        </circle>
+        <path id="pL1" d="M 134,64 L 82,228" fill="none"/>
+
+        <circle r="4" fill="rgba(255,230,50,0.9)">
+          <animateMotion dur="1.6s" repeatCount="indefinite" begin="0.55s"><mpath href="#pL2"/></animateMotion>
+          <animate attributeName="opacity" values="1;1;0" dur="1.6s" repeatCount="indefinite" begin="0.55s"/>
+        </circle>
+        <path id="pL2" d="M 174,66 L 174,228" fill="none"/>
+
+        <circle r="4" fill="rgba(255,230,50,0.9)">
+          <animateMotion dur="1.6s" repeatCount="indefinite" begin="1.1s"><mpath href="#pL3"/></animateMotion>
+          <animate attributeName="opacity" values="1;1;0" dur="1.6s" repeatCount="indefinite" begin="1.1s"/>
+        </circle>
+        <path id="pL3" d="M 214,64 L 266,228" fill="none"/>
+
+        <!-- 右：カプセル外側で止まる（y≒202付近） -->
+        <circle r="4" fill="rgba(255,230,50,0.9)">
+          <animateMotion dur="1.6s" repeatCount="indefinite" begin="0.2s"><mpath href="#pR1"/></animateMotion>
+          <animate attributeName="opacity" values="1;1;0" dur="1.6s" repeatCount="indefinite" begin="0.2s"/>
+        </circle>
+        <path id="pR1" d="M 546,64 L 494,202" fill="none"/>
+
+        <circle r="4" fill="rgba(255,230,50,0.9)">
+          <animateMotion dur="1.6s" repeatCount="indefinite" begin="0.75s"><mpath href="#pR2"/></animateMotion>
+          <animate attributeName="opacity" values="1;1;0" dur="1.6s" repeatCount="indefinite" begin="0.75s"/>
+        </circle>
+        <path id="pR2" d="M 586,66 L 586,202" fill="none"/>
+
+        <circle r="4" fill="rgba(255,230,50,0.9)">
+          <animateMotion dur="1.6s" repeatCount="indefinite" begin="1.3s"><mpath href="#pR3"/></animateMotion>
+          <animate attributeName="opacity" values="1;1;0" dur="1.6s" repeatCount="indefinite" begin="1.3s"/>
+        </circle>
+        <path id="pR3" d="M 626,64 L 678,202" fill="none"/>
+
+        <!-- ===== 説明文（最下部・重ならない） ===== -->
+        <text x="174" y="304" text-anchor="middle" font-family="sans-serif" font-size="12.5" fill="rgba(254,252,248,0.6)">UV吸収剤が直接肌に触れる</text>
+        <text x="174" y="322" text-anchor="middle" font-family="sans-serif" font-size="12" fill="rgba(232,112,74,0.75)">→ 乾燥・刺激の原因に</text>
+
+        <text x="586" y="304" text-anchor="middle" font-family="sans-serif" font-size="12.5" fill="rgba(254,252,248,0.6)">カプセルが肌への直接接触を防ぐ</text>
+        <text x="586" y="322" text-anchor="middle" font-family="sans-serif" font-size="12" fill="rgba(200,146,74,0.85)">→ 乾燥しにくく、刺激が少ない</text>
+
+        <!-- ===== 凡例（最下部・左に寄せて重なり回避） ===== -->
+        <circle cx="16" cy="356" r="7" fill="rgba(232,112,74,0.85)"/>
+        <text x="29" y="361" font-family="sans-serif" font-size="11" fill="rgba(254,252,248,0.5)">UV吸収剤</text>
+
+        <circle cx="120" cy="356" r="11" fill="rgba(200,146,74,0.15)" stroke="rgba(200,146,74,0.7)" stroke-width="1.5"/>
+        <circle cx="120" cy="356" r="5.5" fill="rgba(232,112,74,0.55)"/>
+        <text x="137" y="361" font-family="sans-serif" font-size="11" fill="rgba(254,252,248,0.5)">シラソーマ（UV吸収剤をカプセルに封入）</text>
+
+      </svg>
     </div>
 
     <!-- 3つの効果 -->
